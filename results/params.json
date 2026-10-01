@@ -1,0 +1,35 @@
+{
+ "C1": {
+  "total": 252396032,
+  "trainable": 149438720
+ },
+ "C2": {
+  "total": 197230592,
+  "trainable": 94273280
+ },
+ "C3": {
+  "total": 183428864,
+  "trainable": 183428864
+ },
+ "C4": {
+  "total": 183428864,
+  "trainable": 183428864
+ },
+ "C5": {
+  "total": 134028416,
+  "trainable": 39476096,
+  "note": "trainable = the per-question path (text encoder, fusion, head); the rest is the frozen SigLIP2-B/32 vision tower"
+ },
+ "C6": {
+  "total": 59310080,
+  "trainable": 59310080
+ },
+ "C6s": {
+  "total": 112557824,
+  "trainable": 112557824
+ },
+ "laya-snake": {
+  "total": 321908998,
+  "note": "sum of tensor sizes in the released safetensors file"
+ }
+}

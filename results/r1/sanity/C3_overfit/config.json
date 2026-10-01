@@ -1,0 +1,16 @@
+{
+ "cand": "C3",
+ "budget": 1e+30,
+ "seed": 0,
+ "batch": 16,
+ "lr_new": 0.0003,
+ "lr_inherited": 5e-05,
+ "weight_decay": 0.05,
+ "warmup_frac": 0.05,
+ "max_len": 320,
+ "max_q_per_seq": 4,
+ "sanity": "overfit",
+ "out": "results/r1/sanity/C3_overfit",
+ "amp": true,
+ "eval_benches": "pope_adversarial"
+}

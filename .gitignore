@@ -1,0 +1,26 @@
+# Python and tooling
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.cache/
+.DS_Store
+
+# Local data, weights, feature caches, logs and build output (anchored: glance/data/ is source code)
+/data/
+/logs/
+/dist/
+results/raw/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.onnx.data
+*.npy
+*.npz
+
+# Local agent tooling
+.claude/worktrees/

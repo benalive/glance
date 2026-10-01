@@ -1,0 +1,2051 @@
+{
+ "R1 C1 (research)": {
+  "runs": [
+   "results/r1/C1_ep2_lrA_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.6062567421790723,
+   "sd": null,
+   "values": [
+    0.6062567421790723
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.829477292202228,
+   "sd": null,
+   "values": [
+    0.829477292202228
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.7167420814479638,
+   "sd": null,
+   "values": [
+    0.7167420814479638
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.756007393715342,
+   "sd": null,
+   "values": [
+    0.756007393715342
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.7010869565217391,
+   "sd": null,
+   "values": [
+    0.7010869565217391
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.502144,
+   "sd": null,
+   "values": [
+    0.502144
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.4681127138347248,
+   "sd": null,
+   "values": [
+    0.4681127138347248
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.3762162106182501,
+   "sd": null,
+   "values": [
+    0.3762162106182501
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.5274708815737786,
+   "sd": null,
+   "values": [
+    0.5274708815737786
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.44881889763779526,
+   "sd": null,
+   "values": [
+    0.44881889763779526
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.4755695637781904,
+   "sd": null,
+   "values": [
+    0.4755695637781904
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.7896424976578276,
+   "sd": null,
+   "values": [
+    0.7896424976578276
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.8011043987423068,
+   "sd": null,
+   "values": [
+    0.8011043987423068
+   ]
+  }
+ },
+ "R1 C5 (research)": {
+  "runs": [
+   "results/r1/C5_ep2_lrA_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.4325782092772384,
+   "sd": null,
+   "values": [
+    0.4325782092772384
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7913453299057412,
+   "sd": null,
+   "values": [
+    0.7913453299057412
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.63710407239819,
+   "sd": null,
+   "values": [
+    0.63710407239819
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5767097966728281,
+   "sd": null,
+   "values": [
+    0.5767097966728281
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5535982008995503,
+   "sd": null,
+   "values": [
+    0.5535982008995503
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.51728,
+   "sd": null,
+   "values": [
+    0.51728
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.45862942103455356,
+   "sd": null,
+   "values": [
+    0.45862942103455356
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.4096454973669267,
+   "sd": null,
+   "values": [
+    0.4096454973669267
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.5058945099260985,
+   "sd": null,
+   "values": [
+    0.5058945099260985
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.5536417322834646,
+   "sd": null,
+   "values": [
+    0.5536417322834646
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.6165392973820935,
+   "sd": null,
+   "values": [
+    0.6165392973820935
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.5932882920603305,
+   "sd": null,
+   "values": [
+    0.5932882920603305
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.8154986824999538,
+   "sd": null,
+   "values": [
+    0.8154986824999538
+   ]
+  }
+ },
+ "R1 C7 (early fusion, small)": {
+  "runs": [
+   "results/r1/C7_ep2_lrA_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.43149946062567424,
+   "sd": null,
+   "values": [
+    0.43149946062567424
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7373607540702657,
+   "sd": null,
+   "values": [
+    0.7373607540702657
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.48687782805429863,
+   "sd": null,
+   "values": [
+    0.48687782805429863
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.47689463955637706,
+   "sd": null,
+   "values": [
+    0.47689463955637706
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5376686656671664,
+   "sd": null,
+   "values": [
+    0.5376686656671664
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.5662912072009086,
+   "sd": null,
+   "values": [
+    0.5662912072009086
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.8270402449419604,
+   "sd": null,
+   "values": [
+    0.8270402449419604
+   ]
+  }
+ },
+ "R1 C8 (B/16, 256 tokens)": {
+  "runs": [
+   "results/r1/C8_ep2_lrA_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.447680690399137,
+   "sd": null,
+   "values": [
+    0.447680690399137
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.8127677806341045,
+   "sd": null,
+   "values": [
+    0.8127677806341045
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6153846153846154,
+   "sd": null,
+   "values": [
+    0.6153846153846154
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5693160813308688,
+   "sd": null,
+   "values": [
+    0.5693160813308688
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5755247376311844,
+   "sd": null,
+   "values": [
+    0.5755247376311844
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6167190084363168,
+   "sd": null,
+   "values": [
+    0.6167190084363168
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.8487004039134945,
+   "sd": null,
+   "values": [
+    0.8487004039134945
+   ]
+  }
+ },
+ "C5 research, errors (round 2)": {
+  "runs": [
+   "results/r2/C5_art2_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.4368932038834951,
+   "sd": null,
+   "values": [
+    0.4368932038834951
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.766923736075407,
+   "sd": null,
+   "values": [
+    0.766923736075407
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5647058823529412,
+   "sd": null,
+   "values": [
+    0.5647058823529412
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5286506469500925,
+   "sd": null,
+   "values": [
+    0.5286506469500925
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5427286356821589,
+   "sd": null,
+   "values": [
+    0.5427286356821589
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.632764,
+   "sd": null,
+   "values": [
+    0.632764
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.7898240475282251,
+   "sd": null,
+   "values": [
+    0.7898240475282251
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.7895388194925098,
+   "sd": null,
+   "values": [
+    0.7895388194925098
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.7779127617949219,
+   "sd": null,
+   "values": [
+    0.7779127617949219
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.914554625984252,
+   "sd": null,
+   "values": [
+    0.914554625984252
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.8790567476936805,
+   "sd": null,
+   "values": [
+    0.8790567476936805
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.591912142822218,
+   "sd": null,
+   "values": [
+    0.591912142822218
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.7998834338550831,
+   "sd": null,
+   "values": [
+    0.7998834338550831
+   ]
+  }
+ },
+ "C5 research, distilled from C1": {
+  "runs": [
+   "results/r2/C5_distill_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.4487594390507012,
+   "sd": null,
+   "values": [
+    0.4487594390507012
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7836332476435304,
+   "sd": null,
+   "values": [
+    0.7836332476435304
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6289592760180995,
+   "sd": null,
+   "values": [
+    0.6289592760180995
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5582255083179297,
+   "sd": null,
+   "values": [
+    0.5582255083179297
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5740254872563718,
+   "sd": null,
+   "values": [
+    0.5740254872563718
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.628552,
+   "sd": null,
+   "values": [
+    0.628552
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.8021300622582466,
+   "sd": null,
+   "values": [
+    0.8021300622582466
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.8017199121100661,
+   "sd": null,
+   "values": [
+    0.8017199121100661
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.7807128523576298,
+   "sd": null,
+   "values": [
+    0.7807128523576298
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.9115403543307087,
+   "sd": null,
+   "values": [
+    0.9115403543307087
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.9036814760445001,
+   "sd": null,
+   "values": [
+    0.9036814760445001
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6158844953524667,
+   "sd": null,
+   "values": [
+    0.6158844953524667
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.819407382985043,
+   "sd": null,
+   "values": [
+    0.819407382985043
+   ]
+  }
+ },
+ "C5 research, same data no teacher": {
+  "runs": [
+   "results/r2/C5_gold48k_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.45846817691477887,
+   "sd": null,
+   "values": [
+    0.45846817691477887
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7904884318766067,
+   "sd": null,
+   "values": [
+    0.7904884318766067
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5963800904977375,
+   "sd": null,
+   "values": [
+    0.5963800904977375
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.55637707948244,
+   "sd": null,
+   "values": [
+    0.55637707948244
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5678410794602698,
+   "sd": null,
+   "values": [
+    0.5678410794602698
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.616824,
+   "sd": null,
+   "values": [
+    0.616824
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.8013742726900844,
+   "sd": null,
+   "values": [
+    0.8013742726900844
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.7835218456195705,
+   "sd": null,
+   "values": [
+    0.7835218456195705
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.7789581031369915,
+   "sd": null,
+   "values": [
+    0.7789581031369915
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.8982529527559056,
+   "sd": null,
+   "values": [
+    0.8982529527559056
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.8211648892534865,
+   "sd": null,
+   "values": [
+    0.8211648892534865
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6106116568530532,
+   "sd": null,
+   "values": [
+    0.6106116568530532
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.8155336694402544,
+   "sd": null,
+   "values": [
+    0.8155336694402544
+   ]
+  }
+ },
+ "C1 research, errors (teacher)": {
+  "runs": [
+   "results/r2/C1_art2_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.5976267529665588,
+   "sd": null,
+   "values": [
+    0.5976267529665588
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.8200514138817481,
+   "sd": null,
+   "values": [
+    0.8200514138817481
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6986425339366515,
+   "sd": null,
+   "values": [
+    0.6986425339366515
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.7597042513863216,
+   "sd": null,
+   "values": [
+    0.7597042513863216
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.6853448275862069,
+   "sd": null,
+   "values": [
+    0.6853448275862069
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.644796,
+   "sd": null,
+   "values": [
+    0.644796
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.799227510999187,
+   "sd": null,
+   "values": [
+    0.799227510999187
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.7972145173734511,
+   "sd": null,
+   "values": [
+    0.7972145173734511
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.7833701324963378,
+   "sd": null,
+   "values": [
+    0.7833701324963378
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.9413754921259843,
+   "sd": null,
+   "values": [
+    0.9413754921259843
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.9283277924096541,
+   "sd": null,
+   "values": [
+    0.9283277924096541
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.7631525556515342,
+   "sd": null,
+   "values": [
+    0.7631525556515342
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.8072208216637162,
+   "sd": null,
+   "values": [
+    0.8072208216637162
+   ]
+  }
+ },
+ "C9 (C1 cut to 192 px, 6 layers)": {
+  "runs": [
+   "results/r2/C9_distill_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.38727076591154264,
+   "sd": null,
+   "values": [
+    0.38727076591154264
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.565981148243359,
+   "sd": null,
+   "values": [
+    0.565981148243359
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5981900452488688,
+   "sd": null,
+   "values": [
+    0.5981900452488688
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.47689463955637706,
+   "sd": null,
+   "values": [
+    0.47689463955637706
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5273613193403298,
+   "sd": null,
+   "values": [
+    0.5273613193403298
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.519768,
+   "sd": null,
+   "values": [
+    0.519768
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.6719899164769462,
+   "sd": null,
+   "values": [
+    0.6719899164769462
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6505984610631368,
+   "sd": null,
+   "values": [
+    0.6505984610631368
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6738159603226974,
+   "sd": null,
+   "values": [
+    0.6738159603226974
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.5952878937007874,
+   "sd": null,
+   "values": [
+    0.5952878937007874
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.734496207705482,
+   "sd": null,
+   "values": [
+    0.734496207705482
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.5654448919284832,
+   "sd": null,
+   "values": [
+    0.5654448919284832
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5793088842164522,
+   "sd": null,
+   "values": [
+    0.5793088842164522
+   ]
+  }
+ },
+ "clean C5": {
+  "runs": [
+   "results/r3/C5_clean_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3441208198489752,
+   "sd": null,
+   "values": [
+    0.3441208198489752
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7583547557840618,
+   "sd": null,
+   "values": [
+    0.7583547557840618
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6171945701357466,
+   "sd": null,
+   "values": [
+    0.6171945701357466
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.6229205175600739,
+   "sd": null,
+   "values": [
+    0.6229205175600739
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5712143928035982,
+   "sd": null,
+   "values": [
+    0.5712143928035982
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6206424633752798,
+   "sd": null,
+   "values": [
+    0.6206424633752798
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5567436795717964,
+   "sd": null,
+   "values": [
+    0.5567436795717964
+   ]
+  }
+ },
+ "clean C5f6": {
+  "runs": [
+   "results/r3/C5f6_clean_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3656957928802589,
+   "sd": null,
+   "values": [
+    0.3656957928802589
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7737789203084833,
+   "sd": null,
+   "values": [
+    0.7737789203084833
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6144796380090498,
+   "sd": null,
+   "values": [
+    0.6144796380090498
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5674676524953789,
+   "sd": null,
+   "values": [
+    0.5674676524953789
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5785232383808095,
+   "sd": null,
+   "values": [
+    0.5785232383808095
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6235194575938935,
+   "sd": null,
+   "values": [
+    0.6235194575938935
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5112867182117018,
+   "sd": null,
+   "values": [
+    0.5112867182117018
+   ]
+  }
+ },
+ "clean C5u4 (lr 5e-5)": {
+  "runs": [
+   "results/r3/C5u4_clean_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3365695792880259,
+   "sd": null,
+   "values": [
+    0.3365695792880259
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.720222793487575,
+   "sd": null,
+   "values": [
+    0.720222793487575
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5484162895927602,
+   "sd": null,
+   "values": [
+    0.5484162895927602
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5748613678373382,
+   "sd": null,
+   "values": [
+    0.5748613678373382
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5412293853073463,
+   "sd": null,
+   "values": [
+    0.5412293853073463
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.585511633304877,
+   "sd": null,
+   "values": [
+    0.585511633304877
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5621554001372999,
+   "sd": null,
+   "values": [
+    0.5621554001372999
+   ]
+  }
+ },
+ "clean C5u4 (image lr 1e-5)": {
+  "runs": [
+   "results/r3/C5u4_lrimg1e-5_clean_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3559870550161812,
+   "sd": null,
+   "values": [
+    0.3559870550161812
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7523564695801199,
+   "sd": null,
+   "values": [
+    0.7523564695801199
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5746606334841629,
+   "sd": null,
+   "values": [
+    0.5746606334841629
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5212569316081331,
+   "sd": null,
+   "values": [
+    0.5212569316081331
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5520989505247377,
+   "sd": null,
+   "values": [
+    0.5520989505247377
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.5957170138664476,
+   "sd": null,
+   "values": [
+    0.5957170138664476
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5564456217514938,
+   "sd": null,
+   "values": [
+    0.5564456217514938
+   ]
+  }
+ },
+ "clean C5 + Qwen teacher": {
+  "runs": [
+   "results/r3/C5_qwen_clean_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3710895361380798,
+   "sd": null,
+   "values": [
+    0.3710895361380798
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7600685518423308,
+   "sd": null,
+   "values": [
+    0.7600685518423308
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6307692307692307,
+   "sd": null,
+   "values": [
+    0.6307692307692307
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5804066543438078,
+   "sd": null,
+   "values": [
+    0.5804066543438078
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5847076461769115,
+   "sd": null,
+   "values": [
+    0.5847076461769115
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6356269575475277,
+   "sd": null,
+   "values": [
+    0.6356269575475277
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5711075419249805,
+   "sd": null,
+   "values": [
+    0.5711075419249805
+   ]
+  }
+ },
+ "clean errors, two-stage v1": {
+  "runs": [
+   "results/r3/C5_art_clean_ep2"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.37001078748651567,
+   "sd": null,
+   "values": [
+    0.37001078748651567
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7763496143958869,
+   "sd": null,
+   "values": [
+    0.7763496143958869
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6144796380090498,
+   "sd": null,
+   "values": [
+    0.6144796380090498
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5600739371534196,
+   "sd": null,
+   "values": [
+    0.5600739371534196
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5916416791604198,
+   "sd": null,
+   "values": [
+    0.5916416791604198
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.664732,
+   "sd": null,
+   "values": [
+    0.664732
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.6950312499460612,
+   "sd": null,
+   "values": [
+    0.6950312499460612
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.36563817723319314,
+   "sd": null,
+   "values": [
+    0.36563817723319314
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.7022093043506866,
+   "sd": null,
+   "values": [
+    0.7022093043506866
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.8267101377952756,
+   "sd": null,
+   "values": [
+    0.8267101377952756
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.22059352647410158,
+   "sd": null,
+   "values": [
+    0.22059352647410158
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6371224634427209,
+   "sd": null,
+   "values": [
+    0.6371224634427209
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5369999623972492,
+   "sd": null,
+   "values": [
+    0.5369999623972492
+   ]
+  }
+ },
+ "one-stage v2, Qwen teacher": {
+  "runs": [
+   "results/r4/C5_open_s0",
+   "results/r4/C5_open_s1",
+   "results/r4/C5_open_s2"
+  ],
+  "n_seeds": 3,
+  "acc:aokvqa_val": {
+   "mean": 0.37648327939590076,
+   "sd": 0.011365322279237047,
+   "values": [
+    0.37540453074433655,
+    0.3656957928802589,
+    0.3883495145631068
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7739217366466725,
+   "sd": 0.0027545417769188466,
+   "values": [
+    0.7750642673521851,
+    0.7759211653813196,
+    0.7707797772065125
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6316742081447964,
+   "sd": 0.01997110994634741,
+   "values": [
+    0.6334841628959276,
+    0.6506787330316742,
+    0.6108597285067874
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.558841651263093,
+   "sd": 0.02412417985268252,
+   "values": [
+    0.5360443622920518,
+    0.55637707948244,
+    0.5841035120147874
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5726511744127936,
+   "sd": 0.0033120230239408774,
+   "values": [
+    0.5710269865067467,
+    0.5764617691154422,
+    0.5704647676161919
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.6613746666666667,
+   "sd": 0.01275037275272114,
+   "values": [
+    0.67608,
+    0.654644,
+    0.6534
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.6880771804338458,
+   "sd": 0.009172835960930279,
+   "values": [
+    0.6959775511296066,
+    0.6780172465871883,
+    0.6902367435847425
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6628593110915877,
+   "sd": 0.024509306522727474,
+   "values": [
+    0.6896632669440987,
+    0.6573228953968251,
+    0.6415917709338391
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6854553323954548,
+   "sd": 0.0018472473669921875,
+   "values": [
+    0.6865137034148721,
+    0.6865299582598802,
+    0.6833223355116116
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.8090961286089239,
+   "sd": 0.019294513496507733,
+   "values": [
+    0.827632874015748,
+    0.7891240157480315,
+    0.8105314960629921
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.7357171298495074,
+   "sd": 0.3057850210428479,
+   "values": [
+    0.9075169465912525,
+    0.38266914209231034,
+    0.9169653008649598
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6313458541440575,
+   "sd": 0.0071021502509219705,
+   "values": [
+    0.6291864751414998,
+    0.6392770653689505,
+    0.6255740219217223
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5196407319486328,
+   "sd": 0.010444568809685965,
+   "values": [
+    0.5312960844672856,
+    0.5111291060121114,
+    0.5164970053665014
+   ]
+  }
+ },
+ "one-stage v2, no teacher": {
+  "runs": [
+   "results/r4/C5_open_noteacher_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.36893203883495146,
+   "sd": null,
+   "values": [
+    0.36893203883495146
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7772065124250214,
+   "sd": null,
+   "values": [
+    0.7772065124250214
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5520361990950227,
+   "sd": null,
+   "values": [
+    0.5520361990950227
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5378927911275416,
+   "sd": null,
+   "values": [
+    0.5378927911275416
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5715892053973014,
+   "sd": null,
+   "values": [
+    0.5715892053973014
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.654728,
+   "sd": null,
+   "values": [
+    0.654728
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.6847708078382908,
+   "sd": null,
+   "values": [
+    0.6847708078382908
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.691413039538388,
+   "sd": null,
+   "values": [
+    0.691413039538388
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6835986678767496,
+   "sd": null,
+   "values": [
+    0.6835986678767496
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.8207431102362205,
+   "sd": null,
+   "values": [
+    0.8207431102362205
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.8984787645898997,
+   "sd": null,
+   "values": [
+    0.8984787645898997
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6268916519748152,
+   "sd": null,
+   "values": [
+    0.6268916519748152
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.454010533784009,
+   "sd": null,
+   "values": [
+    0.454010533784009
+   ]
+  }
+ },
+ "one-stage v2, 4 epochs": {
+  "runs": [
+   "results/r4/C5_open_ep4_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3710895361380798,
+   "sd": null,
+   "values": [
+    0.3710895361380798
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7947729220222793,
+   "sd": null,
+   "values": [
+    0.7947729220222793
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6009049773755656,
+   "sd": null,
+   "values": [
+    0.6009049773755656
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5194085027726433,
+   "sd": null,
+   "values": [
+    0.5194085027726433
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5884557721139431,
+   "sd": null,
+   "values": [
+    0.5884557721139431
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.651852,
+   "sd": null,
+   "values": [
+    0.651852
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.6780185411168511,
+   "sd": null,
+   "values": [
+    0.6780185411168511
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6774707393145206,
+   "sd": null,
+   "values": [
+    0.6774707393145206
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6720139946475118,
+   "sd": null,
+   "values": [
+    0.6720139946475118
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.7844488188976378,
+   "sd": null,
+   "values": [
+    0.7844488188976378
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.9070060302520041,
+   "sd": null,
+   "values": [
+    0.9070060302520041
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6436112083698874,
+   "sd": null,
+   "values": [
+    0.6436112083698874
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5538584414649633,
+   "sd": null,
+   "values": [
+    0.5538584414649633
+   ]
+  }
+ },
+ "two-stage v2": {
+  "runs": [
+   "results/r4/C5_open_2stage_s0",
+   "results/r4/C5_open_2stage_s1",
+   "results/r4/C5_open_2stage_s2"
+  ],
+  "n_seeds": 3,
+  "acc:aokvqa_val": {
+   "mean": 0.3725278676734987,
+   "sd": 0.007576881519491363,
+   "values": [
+    0.36461704422869473,
+    0.37971952535059333,
+    0.3732470334412082
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7793487574978578,
+   "sd": 0.0035070063289942112,
+   "values": [
+    0.7832047986289632,
+    0.7763496143958869,
+    0.7784918594687232
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5894419306184012,
+   "sd": 0.010566684698725147,
+   "values": [
+    0.6009049773755656,
+    0.5873303167420815,
+    0.5800904977375566
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5668515095502157,
+   "sd": 0.009118082924798966,
+   "values": [
+    0.5730129390018485,
+    0.5711645101663586,
+    0.55637707948244
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5901424287856072,
+   "sd": 0.003935532233883099,
+   "values": [
+    0.5940779610194903,
+    0.5901424287856072,
+    0.5862068965517241
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.6504333333333333,
+   "sd": 0.02301986527617689,
+   "values": [
+    0.673868,
+    0.627852,
+    0.64958
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.7059646317235714,
+   "sd": 0.01699742858866845,
+   "values": [
+    0.7244149157433794,
+    0.7025362856664498,
+    0.6909426937608848
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6795925453502508,
+   "sd": 0.019990619923965877,
+   "values": [
+    0.657632287986247,
+    0.6967318304131621,
+    0.6844135176513435
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6979474387976059,
+   "sd": 0.015856673261657878,
+   "values": [
+    0.715272781455544,
+    0.6944139451089365,
+    0.6841555898283372
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.8045234580052494,
+   "sd": 0.026065285430365782,
+   "values": [
+    0.828371062992126,
+    0.7766978346456693,
+    0.8085014763779528
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.5560688705630633,
+   "sd": 0.38458931173506894,
+   "values": [
+    0.7528819999136479,
+    0.11290531496912914,
+    0.8024192968064131
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6493078484741363,
+   "sd": 0.0015290688922625138,
+   "values": [
+    0.6510698402939082,
+    0.6483289224995237,
+    0.6485247826289768
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5472969503781011,
+   "sd": 0.013579191963621087,
+   "values": [
+    0.5589054197584699,
+    0.550621079909871,
+    0.5323643514659626
+   ]
+  }
+ },
+ "two-stage v3 (templated wordings)": {
+  "runs": [
+   "results/r4/C5_open3_s0",
+   "results/r4/C5_open3_s1",
+   "results/r4/C5_open3_s2"
+  ],
+  "n_seeds": 3,
+  "acc:aokvqa_val": {
+   "mean": 0.3772024451636102,
+   "sd": 0.021203197393463612,
+   "values": [
+    0.35275080906148865,
+    0.3883495145631068,
+    0.39050701186623515
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7730648386175378,
+   "sd": 0.0048725284516515505,
+   "values": [
+    0.7784918594687232,
+    0.7690659811482433,
+    0.7716366752356469
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.5936651583710407,
+   "sd": 0.008043614857299146,
+   "values": [
+    0.6,
+    0.5963800904977375,
+    0.5846153846153846
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5637707948243993,
+   "sd": 0.01478743068391869,
+   "values": [
+    0.5785582255083179,
+    0.5489833641404805,
+    0.5637707948243993
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5916416791604199,
+   "sd": 0.0023481941690670456,
+   "values": [
+    0.5893928035982009,
+    0.5940779610194903,
+    0.5914542728635682
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.6482226666666667,
+   "sd": 0.008431500301448944,
+   "values": [
+    0.638508,
+    0.652524,
+    0.653636
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.6927810697187647,
+   "sd": 0.02479770665182632,
+   "values": [
+    0.665356746484489,
+    0.6993618831781911,
+    0.7136245794936145
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6980066544578136,
+   "sd": 0.025275272435505855,
+   "values": [
+    0.6727170106375817,
+    0.6980354217836547,
+    0.7232675309522042
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6962094604488014,
+   "sd": 0.01419663796866125,
+   "values": [
+    0.6799498421925464,
+    0.7025328531703721,
+    0.7061456859834858
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.8265050853018373,
+   "sd": 0.003331140710023504,
+   "values": [
+    0.8300935039370079,
+    0.8235113188976378,
+    0.8259104330708661
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.8656026174268047,
+   "sd": 0.04347403282260513,
+   "values": [
+    0.9056172013298217,
+    0.8193443000446152,
+    0.871846350905977
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6480807252838287,
+   "sd": 0.002772647572218202,
+   "values": [
+    0.6487922989033519,
+    0.6450216401557665,
+    0.6504282367923675
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5257294598390873,
+   "sd": 0.006680041346816972,
+   "values": [
+    0.525317137790224,
+    0.5192651302300496,
+    0.532606111496988
+   ]
+  }
+ },
+ "two-stage v4 (+ face crops; released recipe)": {
+  "runs": [
+   "results/r4/C5_open4_s0",
+   "results/r4/C5_open4_s1",
+   "results/r4/C5_open4_s2"
+  ],
+  "n_seeds": 3,
+  "acc:aokvqa_val": {
+   "mean": 0.38007910823444807,
+   "sd": 0.007182662479481548,
+   "values": [
+    0.3883495145631068,
+    0.37648327939590076,
+    0.37540453074433655
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7783490431305342,
+   "sd": 0.0080877435788448,
+   "values": [
+    0.7853470437017995,
+    0.7802056555269923,
+    0.7694944301628106
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6054298642533937,
+   "sd": 0.021963187510428216,
+   "values": [
+    0.6190045248868778,
+    0.5800904977375566,
+    0.6171945701357466
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5773259396179914,
+   "sd": 0.028295656200135636,
+   "values": [
+    0.5452865064695009,
+    0.5988909426987061,
+    0.5878003696857671
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5922663668165917,
+   "sd": 0.006679485726203139,
+   "values": [
+    0.5997001499250375,
+    0.5867691154422788,
+    0.5903298350824587
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.6649986666666666,
+   "sd": 0.013255737675939936,
+   "values": [
+    0.667308,
+    0.676948,
+    0.65074
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.694595712632826,
+   "sd": 0.006816103213109261,
+   "values": [
+    0.7022745749196098,
+    0.692251463250029,
+    0.6892610997288392
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6911060921716627,
+   "sd": 0.003913112515277172,
+   "values": [
+    0.6954191773350294,
+    0.687783178363749,
+    0.6901159208162095
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6950930364114978,
+   "sd": 0.004854105347310992,
+   "values": [
+    0.6946120994099878,
+    0.6904973015022186,
+    0.7001697083222871
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.8132586942257217,
+   "sd": 0.013932241833193177,
+   "values": [
+    0.827878937007874,
+    0.811761811023622,
+    0.8001353346456693
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.7828581571511496,
+   "sd": 0.20113275953691823,
+   "values": [
+    0.9113092411093361,
+    0.5510628499057323,
+    0.8862023804383806
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6483688953882104,
+   "sd": 0.0048766123536208945,
+   "values": [
+    0.6534998968713522,
+    0.6437944232972954,
+    0.6478123659959839
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5312879386285789,
+   "sd": 0.012578742561408144,
+   "values": [
+    0.5191862577945778,
+    0.5303827201635574,
+    0.5442948379276016
+   ]
+  }
+ },
+ "two-stage v4 seed 0": {
+  "runs": [
+   "results/r4/C5_open4_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3883495145631068,
+   "sd": null,
+   "values": [
+    0.3883495145631068
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.7853470437017995,
+   "sd": null,
+   "values": [
+    0.7853470437017995
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6190045248868778,
+   "sd": null,
+   "values": [
+    0.6190045248868778
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5452865064695009,
+   "sd": null,
+   "values": [
+    0.5452865064695009
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5997001499250375,
+   "sd": null,
+   "values": [
+    0.5997001499250375
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.667308,
+   "sd": null,
+   "values": [
+    0.667308
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.7022745749196098,
+   "sd": null,
+   "values": [
+    0.7022745749196098
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6954191773350294,
+   "sd": null,
+   "values": [
+    0.6954191773350294
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.6946120994099878,
+   "sd": null,
+   "values": [
+    0.6946120994099878
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.827878937007874,
+   "sd": null,
+   "values": [
+    0.827878937007874
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.9113092411093361,
+   "sd": null,
+   "values": [
+    0.9113092411093361
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6534998968713522,
+   "sd": null,
+   "values": [
+    0.6534998968713522
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5191862577945778,
+   "sd": null,
+   "values": [
+    0.5191862577945778
+   ]
+  }
+ },
+ "two-stage v5 (+ procedural local anomalies) seed 0": {
+  "runs": [
+   "results/r4/C5_open5_s0"
+  ],
+  "n_seeds": 1,
+  "acc:aokvqa_val": {
+   "mean": 0.3807982740021575,
+   "sd": null,
+   "values": [
+    0.3807982740021575
+   ]
+  },
+  "acc:pope_adversarial": {
+   "mean": 0.773350471293916,
+   "sd": null,
+   "values": [
+    0.773350471293916
+   ]
+  },
+  "acc:sugarcrepe_replace_rel": {
+   "mean": 0.6153846153846154,
+   "sd": null,
+   "values": [
+    0.6153846153846154
+   ]
+  },
+  "acc:sugarcrepe_swap_att": {
+   "mean": 0.5730129390018485,
+   "sd": null,
+   "values": [
+    0.5730129390018485
+   ]
+  },
+  "acc:vqav2_val_yesno": {
+   "mean": 0.5940779610194903,
+   "sd": null,
+   "values": [
+    0.5940779610194903
+   ]
+  },
+  "auroc:artibench": {
+   "mean": 0.631484,
+   "sd": null,
+   "values": [
+    0.631484
+   ]
+  },
+  "auroc:had_val_any": {
+   "mean": 0.6683393428277016,
+   "sd": null,
+   "values": [
+    0.6683393428277016
+   ]
+  },
+  "auroc:had_val_any_anatomically_off": {
+   "mean": 0.6540995165363219,
+   "sd": null,
+   "values": [
+    0.6540995165363219
+   ]
+  },
+  "auroc:had_val_hands": {
+   "mean": 0.676339331500148,
+   "sd": null,
+   "values": [
+    0.676339331500148
+   ]
+  },
+  "auroc:richhf_test_artifacts": {
+   "mean": 0.7604576771653543,
+   "sd": null,
+   "values": [
+    0.7604576771653543
+   ]
+  },
+  "auroc:salart_q1": {
+   "mean": 0.9161017802915821,
+   "sd": null,
+   "values": [
+    0.9161017802915821
+   ]
+  },
+  "auroc:vqav2_val_yesno": {
+   "mean": 0.6491036518781497,
+   "sd": null,
+   "values": [
+    0.6491036518781497
+   ]
+  },
+  "srcc:koniq_test": {
+   "mean": 0.5043942841337804,
+   "sd": null,
+   "values": [
+    0.5043942841337804
+   ]
+  }
+ }
+}

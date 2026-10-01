@@ -1,0 +1,35 @@
+{
+ "n_pairs": 119,
+ "methods": {
+  "whole": {
+   "encodings_per_image": 1,
+   "salart_pairs_auroc": 0.5080855871760469,
+   "salart_flawed_vs_real_auroc": 0.9133960824949988,
+   "salart_flawed_vs_clean_ai_auroc": 0.284156683268273,
+   "artibench_auroc": 0.667454,
+   "threshold_matched_on_salart_real": 0.5,
+   "salart_recall_at_threshold": 0.448512585812357,
+   "real_photo_questions_flagged_at_threshold": 0.002
+  },
+  "tiles2": {
+   "encodings_per_image": 5,
+   "salart_pairs_auroc": 0.5079090459713297,
+   "salart_flawed_vs_real_auroc": 0.9042571564267519,
+   "salart_flawed_vs_clean_ai_auroc": 0.2847816472126608,
+   "artibench_auroc": 0.674086,
+   "threshold_matched_on_salart_real": 0.5682993710691827,
+   "salart_recall_at_threshold": 0.551487414187643,
+   "real_photo_questions_flagged_at_threshold": 0.0065
+  },
+  "tiles3": {
+   "encodings_per_image": 10,
+   "salart_pairs_auroc": 0.5070263399477438,
+   "salart_flawed_vs_real_auroc": 0.9058978455161695,
+   "salart_flawed_vs_clean_ai_auroc": 0.28091648558737,
+   "artibench_auroc": 0.639382,
+   "threshold_matched_on_salart_real": 0.6304169811320758,
+   "salart_recall_at_threshold": 0.5217391304347826,
+   "real_photo_questions_flagged_at_threshold": 0.0105
+  }
+ }
+}

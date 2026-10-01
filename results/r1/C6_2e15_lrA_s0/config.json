@@ -1,0 +1,16 @@
+{
+ "cand": "C6",
+ "budget": 2000000000000000.0,
+ "seed": 0,
+ "batch": 16,
+ "lr_new": 0.0003,
+ "lr_inherited": 5e-05,
+ "weight_decay": 0.05,
+ "warmup_frac": 0.05,
+ "max_len": 320,
+ "max_q_per_seq": 4,
+ "sanity": null,
+ "out": "results/r1/C6_2e15_lrA_s0",
+ "amp": true,
+ "eval_benches": ""
+}

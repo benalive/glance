@@ -1,0 +1,79 @@
+{
+ "machine": "Azure VM, AMD EPYC 9V45 (Zen 5), 16 cores / 32 threads, AVX-512; torch 2.14.0+cpu; onnxruntime 1.30.0; release package glance-c5-open-v4 with image.onnx / questions.onnx; run by the user 2026-09-30",
+ "ms_median": {
+  "4 threads": {
+   "fp32": [
+    57.34,
+    64.06,
+    7.33,
+    14.09,
+    22.49
+   ],
+   "bf16": [
+    32.05,
+    38.75,
+    7.4,
+    14.0,
+    22.44
+   ],
+   "onnx-image": [
+    29.26,
+    36.14,
+    7.54,
+    14.24,
+    22.95
+   ],
+   "onnx-full": [
+    26.16,
+    30.37,
+    4.11,
+    7.78,
+    13.2
+   ]
+  },
+  "32 threads": {
+   "fp32": [
+    32.44,
+    35.42,
+    7.87,
+    11.21,
+    14.53
+   ],
+   "bf16": [
+    43.85,
+    48.7,
+    7.84,
+    11.32,
+    14.69
+   ],
+   "onnx-image": [
+    135.42,
+    122.12,
+    8.0,
+    11.96,
+    15.84
+   ],
+   "onnx-full": [
+    181.36,
+    192.14,
+    15.88,
+    20.22,
+    47.97
+   ]
+  }
+ },
+ "columns": [
+  "new_image_1q",
+  "new_image_4q",
+  "cached_image_1q",
+  "cached_image_4q",
+  "cached_image_8q"
+ ],
+ "fidelity_vs_fp32_max_abs_p": {
+  "bf16": 0.0494,
+  "onnx-image": 0.0001,
+  "onnx-full": 0.0001
+ },
+ "flips": 0.0,
+ "note": "ONNX Runtime slows sharply with 32 intra-op threads on this VM (oversubscription with SMT); use 4 threads"
+}

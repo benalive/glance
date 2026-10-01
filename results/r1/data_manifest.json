@@ -1,0 +1,38 @@
+{
+ "seed": 0,
+ "pope_images_excluded": 500,
+ "aokvqa_train": {
+  "rows": 17056,
+  "dropped_pope_phash": 96
+ },
+ "vqav2_train": {
+  "rows": 45682,
+  "shards": 7,
+  "images": 8502,
+  "dropped_pope_id": 0,
+  "skipped": {
+   "low_agreement": 2961,
+   "no_distractors": 22
+  }
+ },
+ "coco_presence": {
+  "images": 17592,
+  "dropped_pope_id": 53
+ },
+ "counts": {
+  "aokvqa_train": 16960,
+  "vqav2_train": 42699,
+  "coco_presence": 52617,
+  "koniq_train": 7058
+ },
+ "kinds": {
+  "choice": 60265,
+  "noul": 52011,
+  "score": 7058
+ },
+ "images": 47957,
+ "mmstar_near_duplicates_in_mix": 34,
+ "unique_images": 47957,
+ "decisions": 119334,
+ "image_store_gb": 9.43
+}

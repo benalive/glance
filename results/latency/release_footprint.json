@@ -1,0 +1,14 @@
+{
+ "machine": "arm64 macOS-26.1-arm64-arm-64bit",
+ "package": "data/release/glance-c5-open-v4",
+ "peak_rss_mb": {
+  "onnx": 959.484375,
+  "torch": 1450.21875
+ },
+ "decode_12mp_ms": {
+  "median": 41.00614598428365,
+  "min": 38.723584002582356,
+  "max": 77.15454100980423,
+  "n_photos": 10
+ }
+}

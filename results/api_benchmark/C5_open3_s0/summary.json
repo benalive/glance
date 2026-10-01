@@ -1,0 +1,338 @@
+{
+ "server": {
+  "status": "ok",
+  "model": "glance-C5",
+  "checkpoint": "glance-c5-open",
+  "device": "cpu",
+  "calibrated": [
+   "choice",
+   "noul",
+   "score"
+  ],
+  "image_cache": 1,
+  "notes": ""
+ },
+ "benches": {
+  "pope_adversarial": {
+   "n": 3000,
+   "served": 0.7716366752356469,
+   "wall_s": 15.4,
+   "offline": 0.7716366752356469,
+   "top_answer_agreement": 0.999,
+   "max_abs_prob_diff": 0.011135498428678614
+  },
+  "aokvqa_val": {
+   "n": 1145,
+   "served": 0.3505933117583603,
+   "wall_s": 26.7,
+   "offline": 0.35275080906148865,
+   "top_answer_agreement": 0.9930131004366812,
+   "max_abs_prob_diff": 0.44525576059184774
+  },
+  "koniq_test": {
+   "n": 2015,
+   "served": 0.5189866574448355,
+   "wall_s": 47.9,
+   "offline": 0.5192254430930424,
+   "top_answer_agreement": 0.9955334987593052,
+   "max_abs_prob_diff": 0.005295389347545365
+  },
+  "vqav2_val_yesno": {
+   "n": 6813,
+   "served": 0.6022727272727273,
+   "wall_s": 72.7,
+   "offline": 0.6017228739002932,
+   "top_answer_agreement": 0.9976515485102011,
+   "max_abs_prob_diff": 0.015357225961357357,
+   "breakdown": [
+    {
+     "group": "about people (man, woman, child, ...)",
+     "n": 1640,
+     "acc": 0.5945121951219512,
+     "gold_yes_share": 0.49146341463414633,
+     "p_yes_when_yes": 0.5427261786600496,
+     "p_yes_when_no": 0.4536214628297362
+    },
+    {
+     "group": "type: is the",
+     "n": 1307,
+     "acc": 0.5753634276970161,
+     "gold_yes_share": 0.5057383320581484,
+     "p_yes_when_yes": 0.5216397881996975,
+     "p_yes_when_no": 0.46175247678018577
+    },
+    {
+     "group": "'Is there a X', X not a COCO name",
+     "n": 972,
+     "acc": 0.6193415637860082,
+     "gold_yes_share": 0.5308641975308642,
+     "p_yes_when_yes": 0.559640503875969,
+     "p_yes_when_no": 0.4214421052631579
+    },
+    {
+     "group": "type: is this",
+     "n": 607,
+     "acc": 0.6342668863261944,
+     "gold_yes_share": 0.4794069192751236,
+     "p_yes_when_yes": 0.5531367697594501,
+     "p_yes_when_no": 0.45516613924050636
+    },
+    {
+     "group": "type: is this a",
+     "n": 566,
+     "acc": 0.6413427561837456,
+     "gold_yes_share": 0.508833922261484,
+     "p_yes_when_yes": 0.5354805555555555,
+     "p_yes_when_no": 0.413126618705036
+    },
+    {
+     "group": "type: are the",
+     "n": 436,
+     "acc": 0.6100917431192661,
+     "gold_yes_share": 0.4793577981651376,
+     "p_yes_when_yes": 0.5650794258373206,
+     "p_yes_when_no": 0.4558281938325992
+    },
+    {
+     "group": "type: is there a",
+     "n": 396,
+     "acc": 0.6060606060606061,
+     "gold_yes_share": 0.5378787878787878,
+     "p_yes_when_yes": 0.5608150234741783,
+     "p_yes_when_no": 0.4195267759562842
+    },
+    {
+     "group": "type: none of the above",
+     "n": 334,
+     "acc": 0.5748502994011976,
+     "gold_yes_share": 0.5299401197604791,
+     "p_yes_when_yes": 0.5522926553672316,
+     "p_yes_when_no": 0.4882847133757961
+    },
+    {
+     "group": "type: does the",
+     "n": 278,
+     "acc": 0.5683453237410072,
+     "gold_yes_share": 0.5251798561151079,
+     "p_yes_when_yes": 0.5272465753424658,
+     "p_yes_when_no": 0.4872257575757575
+    },
+    {
+     "group": "type: is there",
+     "n": 271,
+     "acc": 0.6051660516605166,
+     "gold_yes_share": 0.5424354243542435,
+     "p_yes_when_yes": 0.5569931972789116,
+     "p_yes_when_no": 0.43075645161290327
+    },
+    {
+     "group": "type: is it",
+     "n": 269,
+     "acc": 0.6468401486988847,
+     "gold_yes_share": 0.550185873605948,
+     "p_yes_when_yes": 0.5614398648648649,
+     "p_yes_when_no": 0.37979338842975213
+    },
+    {
+     "group": "type: is",
+     "n": 261,
+     "acc": 0.5708812260536399,
+     "gold_yes_share": 0.49808429118773945,
+     "p_yes_when_yes": 0.51619,
+     "p_yes_when_no": 0.44981603053435115
+    },
+    {
+     "group": "type: are there",
+     "n": 233,
+     "acc": 0.6652360515021459,
+     "gold_yes_share": 0.51931330472103,
+     "p_yes_when_yes": 0.593695867768595,
+     "p_yes_when_no": 0.42654732142857144
+    },
+    {
+     "group": "type: are these",
+     "n": 224,
+     "acc": 0.6741071428571429,
+     "gold_yes_share": 0.48660714285714285,
+     "p_yes_when_yes": 0.5565284403669726,
+     "p_yes_when_no": 0.42396173913043483
+    },
+    {
+     "group": "type: are",
+     "n": 209,
+     "acc": 0.5406698564593302,
+     "gold_yes_share": 0.47368421052631576,
+     "p_yes_when_yes": 0.5176222222222222,
+     "p_yes_when_no": 0.4889054545454545
+    },
+    {
+     "group": "type: does this",
+     "n": 185,
+     "acc": 0.5837837837837838,
+     "gold_yes_share": 0.5513513513513514,
+     "p_yes_when_yes": 0.5635774509803922,
+     "p_yes_when_no": 0.5128939759036145
+    },
+    {
+     "group": "type: is the man",
+     "n": 169,
+     "acc": 0.5976331360946746,
+     "gold_yes_share": 0.47928994082840237,
+     "p_yes_when_yes": 0.5448691358024691,
+     "p_yes_when_no": 0.46419090909090904
+    },
+    {
+     "group": "type: do",
+     "n": 128,
+     "acc": 0.6640625,
+     "gold_yes_share": 0.65625,
+     "p_yes_when_yes": 0.6060559523809524,
+     "p_yes_when_no": 0.5446954545454545
+    },
+    {
+     "group": "type: are there any",
+     "n": 126,
+     "acc": 0.626984126984127,
+     "gold_yes_share": 0.4603174603174603,
+     "p_yes_when_yes": 0.5372724137931035,
+     "p_yes_when_no": 0.3873426470588235
+    },
+    {
+     "group": "type: are they",
+     "n": 95,
+     "acc": 0.6421052631578947,
+     "gold_yes_share": 0.4105263157894737,
+     "p_yes_when_yes": 0.5830717948717947,
+     "p_yes_when_no": 0.4207446428571429
+    },
+    {
+     "group": "type: is he",
+     "n": 91,
+     "acc": 0.5824175824175825,
+     "gold_yes_share": 0.5164835164835165,
+     "p_yes_when_yes": 0.5049489361702127,
+     "p_yes_when_no": 0.38935
+    },
+    {
+     "group": "type: has",
+     "n": 84,
+     "acc": 0.5714285714285714,
+     "gold_yes_share": 0.5595238095238095,
+     "p_yes_when_yes": 0.4891361702127659,
+     "p_yes_when_no": 0.4415135135135135
+    },
+    {
+     "group": "type: is this an",
+     "n": 79,
+     "acc": 0.6329113924050633,
+     "gold_yes_share": 0.569620253164557,
+     "p_yes_when_yes": 0.5650444444444445,
+     "p_yes_when_no": 0.45374705882352945
+    },
+    {
+     "group": "type: is the woman",
+     "n": 74,
+     "acc": 0.6081081081081081,
+     "gold_yes_share": 0.6351351351351351,
+     "p_yes_when_yes": 0.5042723404255318,
+     "p_yes_when_no": 0.4396444444444445
+    },
+    {
+     "group": "type: can you",
+     "n": 70,
+     "acc": 0.5,
+     "gold_yes_share": 0.42857142857142855,
+     "p_yes_when_yes": 0.4505,
+     "p_yes_when_no": 0.3906
+    },
+    {
+     "group": "type: do you",
+     "n": 62,
+     "acc": 0.7258064516129032,
+     "gold_yes_share": 0.46774193548387094,
+     "p_yes_when_yes": 0.640793103448276,
+     "p_yes_when_no": 0.3762090909090909
+    },
+    {
+     "group": "type: was",
+     "n": 57,
+     "acc": 0.6666666666666666,
+     "gold_yes_share": 0.40350877192982454,
+     "p_yes_when_yes": 0.5352217391304348,
+     "p_yes_when_no": 0.3781
+    },
+    {
+     "group": "type: is that a",
+     "n": 56,
+     "acc": 0.6964285714285714,
+     "gold_yes_share": 0.44642857142857145,
+     "p_yes_when_yes": 0.527568,
+     "p_yes_when_no": 0.3235225806451612
+    },
+    {
+     "group": "'Is there a X', X a COCO name",
+     "n": 53,
+     "acc": 0.6792452830188679,
+     "gold_yes_share": 0.41509433962264153,
+     "p_yes_when_yes": 0.687609090909091,
+     "p_yes_when_no": 0.3910387096774194
+    },
+    {
+     "group": "type: is the person",
+     "n": 52,
+     "acc": 0.5,
+     "gold_yes_share": 0.4423076923076923,
+     "p_yes_when_yes": 0.5170826086956521,
+     "p_yes_when_no": 0.4645103448275862
+    },
+    {
+     "group": "type: is this person",
+     "n": 49,
+     "acc": 0.5714285714285714,
+     "gold_yes_share": 0.4489795918367347,
+     "p_yes_when_yes": 0.5382863636363636,
+     "p_yes_when_no": 0.4629851851851851
+    },
+    {
+     "group": "type: could",
+     "n": 44,
+     "acc": 0.5454545454545454,
+     "gold_yes_share": 0.5909090909090909,
+     "p_yes_when_yes": 0.5521,
+     "p_yes_when_no": 0.5057666666666667
+    },
+    {
+     "group": "type: what",
+     "n": 1,
+     "acc": 0.0,
+     "gold_yes_share": 0.0,
+     "p_yes_when_yes": null,
+     "p_yes_when_no": 0.5077
+    }
+   ]
+  },
+  "had_val_any": {
+   "n": 4173,
+   "served": 0.691251119737235,
+   "wall_s": 100.1,
+   "offline": 0.6906539265452374,
+   "top_answer_agreement": 0.9992810927390366,
+   "max_abs_prob_diff": 0.005396486906591447
+  },
+  "salart_q1": {
+   "n": 755,
+   "served": 0.7154742096505824,
+   "wall_s": 22.0,
+   "offline": 0.7154742096505824,
+   "top_answer_agreement": 1.0,
+   "max_abs_prob_diff": 0.005729389599469004
+  }
+ },
+ "latency_ms": {
+  "new_image": {
+   "n": 11405,
+   "p50": 23.08,
+   "p95": 29.2
+  }
+ }
+}

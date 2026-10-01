@@ -1,0 +1,237 @@
+{
+ "Glance C5 released (v4 seed 0, package)": {
+  "pairs": 119,
+  "pair_wins": 65,
+  "pair_win_rate": 0.5462184873949579,
+  "pair_win_ci95": [
+   0.45671923523240976,
+   0.6328269771256186
+  ],
+  "imagen4_flawed_vs_clean_auroc": 0.4614857456140351,
+  "n_imagen4": [
+   114,
+   96
+  ],
+  "recall_by_generator": {
+   "flux1_dev": [
+    0.2608695652173913,
+    23
+   ],
+   "flux2_klein": [
+    0.38461538461538464,
+    169
+   ],
+   "imagen4": [
+    0.7543859649122807,
+    114
+   ],
+   "other": [
+    0.75,
+    16
+   ],
+   "qwen": [
+    0.36,
+    25
+   ],
+   "z_turbo": [
+    0.2,
+    90
+   ]
+  },
+  "recall_by_type": {
+   "NA": [
+    0.0,
+    3
+   ],
+   "anatomy_anomaly": [
+    0.31666666666666665,
+    120
+   ],
+   "count_anomaly": [
+    0.6597938144329897,
+    97
+   ],
+   "local_render_structure_anomaly": [
+    0.47368421052631576,
+    57
+   ],
+   "plausibility_anomaly": [
+    0.4358974358974359,
+    39
+   ],
+   "topology_anomaly": [
+    0.4132231404958678,
+    121
+   ]
+  },
+  "specificity_real": 0.9748427672955975,
+  "specificity_clean_ai": 0.2184873949579832,
+  "specificity_all_unflawed": 0.7688787185354691
+ },
+ "Glance C5 v4 seed 1 (no calibration)": {
+  "pairs": 119,
+  "pair_wins": 70,
+  "pair_win_rate": 0.5882352941176471,
+  "pair_win_ci95": [
+   0.4983993017742346,
+   0.6725525581820018
+  ],
+  "imagen4_flawed_vs_clean_auroc": 0.5151681286549707,
+  "n_imagen4": [
+   114,
+   96
+  ]
+ },
+ "Glance C5 v4 seed 2 (no calibration)": {
+  "pairs": 119,
+  "pair_wins": 61,
+  "pair_win_rate": 0.5126050420168067,
+  "pair_win_ci95": [
+   0.42381749364556476,
+   0.6006042006338974
+  ],
+  "imagen4_flawed_vs_clean_auroc": 0.4775676169590643,
+  "n_imagen4": [
+   114,
+   96
+  ]
+ },
+ "Glance C5 research (distilled)": {
+  "pairs": 119,
+  "pair_wins": 61,
+  "pair_win_rate": 0.5126050420168067,
+  "pair_win_ci95": [
+   0.42381749364556476,
+   0.6006042006338974
+  ],
+  "imagen4_flawed_vs_clean_auroc": 0.47596856725146197,
+  "n_imagen4": [
+   114,
+   96
+  ],
+  "recall_by_generator": {
+   "flux1_dev": [
+    0.5652173913043478,
+    23
+   ],
+   "flux2_klein": [
+    0.7633136094674556,
+    169
+   ],
+   "imagen4": [
+    0.9736842105263158,
+    114
+   ],
+   "other": [
+    0.9375,
+    16
+   ],
+   "qwen": [
+    0.8,
+    25
+   ],
+   "z_turbo": [
+    0.6444444444444445,
+    90
+   ]
+  },
+  "recall_by_type": {
+   "NA": [
+    0.3333333333333333,
+    3
+   ],
+   "anatomy_anomaly": [
+    0.7416666666666667,
+    120
+   ],
+   "count_anomaly": [
+    0.9484536082474226,
+    97
+   ],
+   "local_render_structure_anomaly": [
+    0.7894736842105263,
+    57
+   ],
+   "plausibility_anomaly": [
+    0.717948717948718,
+    39
+   ],
+   "topology_anomaly": [
+    0.7520661157024794,
+    121
+   ]
+  },
+  "specificity_real": 0.8930817610062893,
+  "specificity_clean_ai": 0.01680672268907563,
+  "specificity_all_unflawed": 0.6544622425629291
+ },
+ "Glance C1 research (teacher)": {
+  "pairs": 119,
+  "pair_wins": 57,
+  "pair_win_rate": 0.4789915966386555,
+  "pair_win_ci95": [
+   0.3913036522440084,
+   0.5679935239568877
+  ],
+  "imagen4_flawed_vs_clean_auroc": 0.45997807017543857,
+  "n_imagen4": [
+   114,
+   96
+  ],
+  "recall_by_generator": {
+   "flux1_dev": [
+    0.6956521739130435,
+    23
+   ],
+   "flux2_klein": [
+    0.7928994082840237,
+    169
+   ],
+   "imagen4": [
+    0.9298245614035088,
+    114
+   ],
+   "other": [
+    0.9375,
+    16
+   ],
+   "qwen": [
+    0.88,
+    25
+   ],
+   "z_turbo": [
+    0.7444444444444445,
+    90
+   ]
+  },
+  "recall_by_type": {
+   "NA": [
+    1.0,
+    3
+   ],
+   "anatomy_anomaly": [
+    0.8,
+    120
+   ],
+   "count_anomaly": [
+    0.9484536082474226,
+    97
+   ],
+   "local_render_structure_anomaly": [
+    0.8245614035087719,
+    57
+   ],
+   "plausibility_anomaly": [
+    0.717948717948718,
+    39
+   ],
+   "topology_anomaly": [
+    0.7768595041322314,
+    121
+   ]
+  },
+  "specificity_real": 0.89937106918239,
+  "specificity_clean_ai": 0.025210084033613446,
+  "specificity_all_unflawed": 0.6613272311212814
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "C5_open4_s0": {
+  "salart": {
+   "per": {
+    "Did the image generator make a mistake somewhere in this picture?": 0.9361642416130564,
+    "Is some detail here physically impossible or botched?": 0.8876379833916209,
+    "Would an artist need to repair something in this picture?": 0.6841565562799534,
+    "Is there a spot in this picture that gives away a failed generation?": 0.9104601125455147,
+    "Are there parts of this scene that could not exist in reality?": 0.9088122274513191,
+    "Something here is rendered wrong, isn't it?": 0.9448318293683347,
+    "Could this picture pass as a faultless photograph?": 0.32502194781457333,
+    "Is everything in this scene coherent and properly formed?": 0.933944274138998,
+    "Would a close inspection find nothing wrong here?": 0.9437560266540017,
+    "Is this rendering good enough to publish without touch-ups?": 0.9242656477123901,
+    "Does every object here have a believable shape?": 0.7788775671747046,
+    "Was this image produced without any glitch a viewer would catch?": 0.938977879481312
+   },
+   "mean": 0.843075524468815,
+   "min": 0.32502194781457333,
+   "salart_q": 0.9133996804973878
+  },
+  "probe_imgs": {
+   "per": {
+    "Did the image generator make a mistake somewhere in this picture?": 0.9293441358024691,
+    "Is some detail here physically impossible or botched?": 0.9152160493827161,
+    "Would an artist need to repair something in this picture?": 0.7381867283950617,
+    "Is there a spot in this picture that gives away a failed generation?": 0.9172376543209877,
+    "Are there parts of this scene that could not exist in reality?": 0.9249845679012346,
+    "Something here is rendered wrong, isn't it?": 0.9297453703703704,
+    "Could this picture pass as a faultless photograph?": 0.4549691358024691,
+    "Is everything in this scene coherent and properly formed?": 0.930300925925926,
+    "Would a close inspection find nothing wrong here?": 0.9303317901234568,
+    "Is this rendering good enough to publish without touch-ups?": 0.9269830246913581,
+    "Does every object here have a believable shape?": 0.8964814814814814,
+    "Was this image produced without any glitch a viewer would catch?": 0.9329359567901234
+   },
+   "mean": 0.868893068415638,
+   "min": 0.4549691358024691,
+   "salart_q": 0.9253047839506173
+  }
+ },
+ "C5_open4_s1": {
+  "salart": {
+   "per": {
+    "Did the image generator make a mistake somewhere in this picture?": 0.9037642300994488,
+    "Is some detail here physically impossible or botched?": 0.8823848999035735,
+    "Would an artist need to repair something in this picture?": 0.6735460472345753,
+    "Is there a spot in this picture that gives away a failed generation?": 0.691032338845473,
+    "Are there parts of this scene that could not exist in reality?": 0.7311968395147015,
+    "Something here is rendered wrong, isn't it?": 0.8879618036066376,
+    "Could this picture pass as a faultless photograph?": 0.34196853906710994,
+    "Is everything in this scene coherent and properly formed?": 0.8881093217045896,
+    "Would a close inspection find nothing wrong here?": 0.7765928356576429,
+    "Is this rendering good enough to publish without touch-ups?": 0.8015054041995884,
+    "Does every object here have a believable shape?": 0.8571665011585567,
+    "Was this image produced without any glitch a viewer would catch?": 0.7294697983679461
+   },
+   "mean": 0.7637248799466536,
+   "min": 0.34196853906710994,
+   "salart_q": 0.5696969042787444
+  },
+  "probe_imgs": {
+   "per": {
+    "Did the image generator make a mistake somewhere in this picture?": 0.9216126543209876,
+    "Is some detail here physically impossible or botched?": 0.9180015432098766,
+    "Would an artist need to repair something in this picture?": 0.7224884259259259,
+    "Is there a spot in this picture that gives away a failed generation?": 0.8413850308641976,
+    "Are there parts of this scene that could not exist in reality?": 0.8525347222222223,
+    "Something here is rendered wrong, isn't it?": 0.9167592592592593,
+    "Could this picture pass as a faultless photograph?": 0.21458333333333332,
+    "Is everything in this scene coherent and properly formed?": 0.9156983024691357,
+    "Would a close inspection find nothing wrong here?": 0.8914236111111111,
+    "Is this rendering good enough to publish without touch-ups?": 0.9049537037037036,
+    "Does every object here have a believable shape?": 0.9112654320987654,
+    "Was this image produced without any glitch a viewer would catch?": 0.8319135802469135
+   },
+   "mean": 0.8202182998971194,
+   "min": 0.21458333333333332,
+   "salart_q": 0.6947067901234568
+  }
+ },
+ "C5_open4_s2": {
+  "salart": {
+   "per": {
+    "Did the image generator make a mistake somewhere in this picture?": 0.9211281896291179,
+    "Is some detail here physically impossible or botched?": 0.8518738396442295,
+    "Would an artist need to repair something in this picture?": 0.6715311658966941,
+    "Is there a spot in this picture that gives away a failed generation?": 0.817476936804686,
+    "Are there parts of this scene that could not exist in reality?": 0.7912978714217866,
+    "Something here is rendered wrong, isn't it?": 0.9159290761769066,
+    "Could this picture pass as a faultless photograph?": 0.6691025142840695,
+    "Is everything in this scene coherent and properly formed?": 0.8685469827151965,
+    "Would a close inspection find nothing wrong here?": 0.8048551444238159,
+    "Is this rendering good enough to publish without touch-ups?": 0.8554826360404704,
+    "Does every object here have a believable shape?": 0.7726818070607199,
+    "Was this image produced without any glitch a viewer would catch?": 0.9359987335031591
+   },
+   "mean": 0.8229920748000707,
+   "min": 0.6691025142840695,
+   "salart_q": 0.8869903429615877
+  },
+  "probe_imgs": {
+   "per": {
+    "Did the image generator make a mistake somewhere in this picture?": 0.9303047839506173,
+    "Is some detail here physically impossible or botched?": 0.9090277777777778,
+    "Would an artist need to repair something in this picture?": 0.6251929012345679,
+    "Is there a spot in this picture that gives away a failed generation?": 0.8995756172839506,
+    "Are there parts of this scene that could not exist in reality?": 0.8976273148148148,
+    "Something here is rendered wrong, isn't it?": 0.9287075617283951,
+    "Could this picture pass as a faultless photograph?": 0.8277276234567901,
+    "Is everything in this scene coherent and properly formed?": 0.914278549382716,
+    "Would a close inspection find nothing wrong here?": 0.8772993827160493,
+    "Is this rendering good enough to publish without touch-ups?": 0.9103973765432098,
+    "Does every object here have a believable shape?": 0.8856635802469136,
+    "Was this image produced without any glitch a viewer would catch?": 0.9278202160493827
+   },
+   "mean": 0.8778018904320989,
+   "min": 0.6251929012345679,
+   "salart_q": 0.9220717592592592
+  }
+ }
+}

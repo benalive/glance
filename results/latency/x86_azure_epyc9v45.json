@@ -1,0 +1,117 @@
+{
+ "machine": "Azure VM, AMD EPYC 9V45 (Zen 5), 16 cores / 32 threads, AVX-512 incl. BF16/VNNI; Linux 6.17; Python 3.12.3; torch 2.14.0+cpu (MKL-DNN 3.12, AVX512); model: release architecture from public base models (same speed as the package); 40 COCO photos; run by the user 2026-09-28",
+ "results_ms_median_p95": {
+  "1": {
+   "new_image_1q": [
+    138.69,
+    141.81
+   ],
+   "new_image_4q": [
+    152.49,
+    153.41
+   ],
+   "cached_image_1q": [
+    13.65,
+    13.72
+   ],
+   "cached_image_2q": [
+    17.95,
+    18.02
+   ],
+   "cached_image_4q": [
+    27.66,
+    27.84
+   ],
+   "cached_image_8q": [
+    47.2,
+    47.38
+   ]
+  },
+  "2": {
+   "new_image_1q": [
+    99.11,
+    99.41
+   ],
+   "new_image_4q": [
+    108.4,
+    109.04
+   ],
+   "cached_image_1q": [
+    11.94,
+    12.02
+   ],
+   "cached_image_2q": [
+    15.33,
+    15.45
+   ],
+   "cached_image_4q": [
+    21.27,
+    21.37
+   ],
+   "cached_image_8q": [
+    33.07,
+    33.23
+   ]
+  },
+  "4": {
+   "new_image_1q": [
+    57.47,
+    57.98
+   ],
+   "new_image_4q": [
+    63.92,
+    64.42
+   ],
+   "cached_image_1q": [
+    7.5,
+    7.57
+   ],
+   "cached_image_2q": [
+    9.7,
+    9.74
+   ],
+   "cached_image_4q": [
+    14.17,
+    14.26
+   ],
+   "cached_image_8q": [
+    22.65,
+    22.79
+   ]
+  },
+  "32": {
+   "new_image_1q": [
+    30.65,
+    31.63
+   ],
+   "new_image_4q": [
+    34.05,
+    35.13
+   ],
+   "cached_image_1q": [
+    7.15,
+    7.7
+   ],
+   "cached_image_2q": [
+    8.41,
+    8.76
+   ],
+   "cached_image_4q": [
+    10.62,
+    10.87
+   ],
+   "cached_image_8q": [
+    13.98,
+    15.22
+   ]
+  }
+ },
+ "m4pro_same_script_4_threads": {
+  "new_image_1q": 23.58,
+  "new_image_4q": 25.42,
+  "cached_image_1q": 4.85,
+  "cached_image_2q": 5.28,
+  "cached_image_4q": 6.72,
+  "cached_image_8q": 11.3
+ }
+}

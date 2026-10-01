@@ -1,0 +1,60 @@
+Glance
+Copyright 2026 Yuan Shen
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE). It includes code
+adapted from the third-party works listed below, each also under the Apache License, Version 2.0.
+
+--------------------------------------------------------------------------------------------------
+LayaStudio
+https://github.com/biplovgautam/LayaStudio (Apache-2.0)
+
+The Snake benchmark task in scripts/snake_cpu_bench.py is adapted from layastudio/snake.py: the move
+question text and options (QUESTIONS), the text board state (render), the free-space count
+(free_space) and the planner teacher (teacher) are reproduced with formatting changes only, and
+protocol_b follows its `play` and `summarize` functions. The planner-game generator `generate` in
+glance/snake.py follows its `generate` function (same seed scheme, 20% exploration, 400-tick cap).
+
+--------------------------------------------------------------------------------------------------
+Hugging Face Transformers
+https://github.com/huggingface/transformers (Apache-2.0)
+Copyright 2024 Answer.AI, LightOn, and contributors, and the HuggingFace Inc. team.
+Copyright 2024 the HuggingFace Inc. team.
+
+glance/mlx/modernbert.py is an MLX port of the ModernBERT encoder in
+transformers/models/modernbert/modeling_modernbert.py (layer structure, GLU MLP, per-layer-type
+rotary embeddings). The pixel-shuffle connector in scripts/latency_mlx.py follows
+Idefics3Connector.pixel_shuffle in transformers/models/idefics3/modeling_idefics3.py, as used by
+ModernVBERT. The single-tower layers in glance/model/towers.py and glance/mlx/tower.py keep the
+module layout and parameter names of the SigLIP vision encoder in
+transformers/models/siglip/modeling_siglip.py so that its weights load directly.
+
+--------------------------------------------------------------------------------------------------
+COCO
+https://cocodataset.org (annotations: Creative Commons Attribution 4.0)
+
+glance/data/coco_names.json lists the 80 COCO object category names, as exposed by the
+detection-datasets/coco copy on the Hugging Face Hub.
+
+--------------------------------------------------------------------------------------------------
+Released weights (glance-c5-open-v4 and the checkpoints published with it)
+Copyright 2026 Yuan Shen. Licensed under the Apache License, Version 2.0.
+
+The weights include and were trained from:
+- SigLIP2-B/32 @256 (google/siglip2-base-patch32-256), Apache License 2.0, Google.
+- Ettin encoder 32M (jhu-clsp/ettin-encoder-32m), MIT License, Weller et al., Johns Hopkins University.
+
+Training data (attribution for every image in the release package's attribution.jsonl):
+- COCO: annotations CC BY 4.0; photos used only under CC BY 2.0, no known copyright restrictions, or US
+  Government work, each credited to its Flickr source.
+- Open Images V7 (Google): annotations CC BY 4.0; photos listed as CC BY 2.0, each credited to its author.
+- VQAv2, CC BY 4.0. GQA, CC BY 4.0. Visual Genome image mapping, CC BY 4.0. A-OKVQA, Apache License 2.0.
+- EvalMuse-40K, BSD-3-Clause; images from open generators under CreativeML OpenRAIL-M, CreativeML Open
+  RAIL++-M, Apache-2.0 and the Playground v2.5 Community License. The Playground licence forbids using its
+  outputs to improve another text-to-image model: do not use these weights to train, reward or filter data
+  for an image generator.
+- ImageRewardDB, Apache License 2.0; images from DiffusionDB, CC0.
+
+--------------------------------------------------------------------------------------------------
+Dependencies used at run time but not copied into this repository (PyTorch, Transformers, ONNX Runtime,
+MLX, laya, laya-mlx) are distributed under their own licences. Datasets and base models are downloaded
+by the scripts and are not part of this repository.

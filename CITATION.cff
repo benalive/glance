@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code, the weights or the results, please cite the technical report."
+title: "Glance: Fast Typed Decisions about Images on a CPU"
+type: software
+authors:
+  - family-names: Shen
+    given-names: Yuan
+license: Apache-2.0
+preferred-citation:
+  type: report
+  title: "Glance: Fast Typed Decisions about Images on a CPU"
+  authors:
+    - family-names: Shen
+      given-names: Yuan
+  year: 2026

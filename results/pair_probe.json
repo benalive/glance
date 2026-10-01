@@ -1,0 +1,26 @@
+{
+ "n_pairs": 119,
+ "n_other_flawed": 318,
+ "n_real": 318,
+ "flaw_footprint": {
+  "median": 0.12425613403320312,
+  "p10": 0.0647430419921875,
+  "p90": 0.23027324676513672
+ },
+ "encoders": {
+  "C5: SigLIP2 B/32 @256 (released)": {
+   "pooled_auroc_flawed_vs_clean": 0.5624602782289386,
+   "paired_accuracy": 0.8991596638655462,
+   "control_pooled_auroc_flawed_vs_real": 0.9805090779636881,
+   "pair_cosine_mean_tokens": 0.9983001947402954,
+   "pair_token_rel_change": 0.14232079684734344
+  },
+  "C1: SigLIP2 B/16 @512 (ModernVBERT)": {
+   "pooled_auroc_flawed_vs_clean": 0.5712873384647977,
+   "paired_accuracy": 0.957983193277311,
+   "control_pooled_auroc_flawed_vs_real": 0.9842569518610814,
+   "pair_cosine_mean_tokens": 0.9990903735160828,
+   "pair_token_rel_change": 0.13297264277935028
+  }
+ }
+}

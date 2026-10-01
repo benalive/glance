@@ -1,0 +1,56 @@
+{
+ "C5 had_val_hands": {
+  "auroc": 0.7927869686678921,
+  "n_test": 1291,
+  "positives": 0.6406698564593302,
+  "C": 0.001
+ },
+ "C5 had_val_any": {
+  "auroc": 0.8197459998150204,
+  "n_test": 1285,
+  "positives": 0.7074047447879224,
+  "C": 0.001
+ },
+ "C5 richhf_test_artifacts": {
+  "auroc": 0.9642424242424242,
+  "n_test": 125,
+  "positives": 0.8266331658291457,
+  "C": 0.1
+ },
+ "C1 had_val_hands": {
+  "auroc": 0.7884745199447508,
+  "n_test": 1291,
+  "positives": 0.6406698564593302,
+  "C": 0.001
+ },
+ "C1 had_val_any": {
+  "auroc": 0.8204252219755827,
+  "n_test": 1285,
+  "positives": 0.7074047447879224,
+  "C": 0.001
+ },
+ "C1 richhf_test_artifacts": {
+  "auroc": 0.9733333333333334,
+  "n_test": 125,
+  "positives": 0.8266331658291457,
+  "C": 0.01
+ },
+ "C9 had_val_hands": {
+  "auroc": 0.6712621117238371,
+  "n_test": 1291,
+  "positives": 0.6406698564593302,
+  "C": 0.01
+ },
+ "C9 had_val_any": {
+  "auroc": 0.6987866490935997,
+  "n_test": 1285,
+  "positives": 0.7074047447879224,
+  "C": 0.01
+ },
+ "C9 richhf_test_artifacts": {
+  "auroc": 0.8236363636363636,
+  "n_test": 125,
+  "positives": 0.8266331658291457,
+  "C": 0.01
+ }
+}

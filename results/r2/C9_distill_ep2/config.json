@@ -1,0 +1,23 @@
+{
+ "cand": "C9",
+ "budget": 1e+30,
+ "seed": 0,
+ "batch": 16,
+ "lr_new": 0.0003,
+ "lr_inherited": 5e-05,
+ "weight_decay": 0.05,
+ "warmup_frac": 0.05,
+ "max_len": 320,
+ "max_q_per_seq": 4,
+ "sanity": null,
+ "out": "results/r2/C9_distill_ep2",
+ "amp": true,
+ "eval_benches": "",
+ "epochs": 2.0,
+ "save_ckpt": true,
+ "data_root": "data/r2distill",
+ "init_ckpt": "data/ckpt/C9_init_C1_art2.pt",
+ "cache_features": true,
+ "distill_teacher": "teacher_C1_art2_ep2.jsonl",
+ "distill_alpha": 0.5
+}

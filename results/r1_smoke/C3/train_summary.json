@@ -1,0 +1,13 @@
+{
+ "steps": 514,
+ "epochs": 0.1522004663730244,
+ "train_flops": 600815893213737.1,
+ "cache_flops_one_time": 0.0,
+ "flop_fit_per_token_per_seq": [
+  491054670.9235418,
+  53939548596.97392
+ ],
+ "wall_s": 1043.23056101799,
+ "sequences": 54034,
+ "final_loss": 0.6994455456733704
+}

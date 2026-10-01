@@ -1,0 +1,57 @@
+{
+ "n": {
+  "flawed": 437,
+  "real": 318,
+  "clean_ai": 119
+ },
+ "n_pairs": 119,
+ "models": {
+  "Glance C5 released (v4 seed 0, package)": {
+   "auroc_flawed_vs_real": 0.9133960824949988,
+   "auroc_flawed_vs_clean_ai": 0.284156683268273,
+   "auroc_injected_vs_original": 0.5080855871760469,
+   "pairs_injected_higher": 0.5462184873949579,
+   "auroc_other_flawed_vs_real": 0.8860211225821764,
+   "recall_flawed": 0.448512585812357,
+   "recall_injected": 0.7815126050420168,
+   "flagged_real": 0.025157232704402517,
+   "flagged_clean_ai": 0.7815126050420168
+  },
+  "Glance C5 v4 seed 1 (no calibration)": {
+   "auroc_flawed_vs_real": 0.5697005022811336,
+   "auroc_flawed_vs_clean_ai": 0.45596407899544256,
+   "auroc_injected_vs_original": 0.5086505190311419,
+   "pairs_injected_higher": 0.5882352941176471,
+   "auroc_other_flawed_vs_real": 0.5500870218741347
+  },
+  "Glance C5 v4 seed 2 (no calibration)": {
+   "auroc_flawed_vs_real": 0.8869903429615877,
+   "auroc_flawed_vs_clean_ai": 0.2709362921369921,
+   "auroc_injected_vs_original": 0.5061789421651013,
+   "pairs_injected_higher": 0.5126050420168067,
+   "auroc_other_flawed_vs_real": 0.8499317669395989
+  },
+  "Glance C5 research (distilled)": {
+   "auroc_flawed_vs_real": 0.9047177007325533,
+   "auroc_flawed_vs_clean_ai": 0.33498067419187355,
+   "auroc_injected_vs_original": 0.501377021396794,
+   "pairs_injected_higher": 0.5126050420168067,
+   "auroc_other_flawed_vs_real": 0.8766761599620269,
+   "recall_flawed": 0.7917620137299771,
+   "recall_injected": 0.9747899159663865,
+   "flagged_real": 0.1069182389937107,
+   "flagged_clean_ai": 0.9831932773109243
+  },
+  "Glance C1 research (teacher)": {
+   "auroc_flawed_vs_real": 0.9285760545745002,
+   "auroc_flawed_vs_clean_ai": 0.3317885506605388,
+   "auroc_injected_vs_original": 0.49509215450886235,
+   "pairs_injected_higher": 0.4789915966386555,
+   "auroc_other_flawed_vs_real": 0.9105800799019026,
+   "recall_flawed": 0.8237986270022883,
+   "recall_injected": 0.957983193277311,
+   "flagged_real": 0.10062893081761007,
+   "flagged_clean_ai": 0.9747899159663865
+  }
+ }
+}

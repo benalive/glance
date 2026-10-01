@@ -1,0 +1,339 @@
+{
+ "server": {
+  "status": "ok",
+  "model": "glance-C5",
+  "checkpoint": "glance-c5-open-v4",
+  "device": "cpu",
+  "runtime": "onnx",
+  "calibrated": [
+   "choice",
+   "noul",
+   "score"
+  ],
+  "image_cache": 1,
+  "notes": "Glance C5 (open licence, glance-c5-open-v4): 134M parameters, ~23 ms per new image and ~5 ms per question on a cached image, CPU. Trained only on licence-clean data. Strongest at spotting visible errors in AI-generated images (SalArt-VQA AUROC 0.91, HAD hands/any 0.70, RichHF 0.83) and at object presence (\"Is there a dog?\": 77-89% on POPE); real photos are rarely flagged (0.8%; 0.0-0.3% of portraits in every demographic group). Its threshold is conservative: it misses about half of subtle flaws. Phrase error questions positively (\"Does this image contain...?\"): negated wordings can invert. Everyday questions about people and scenes: about 60% right. It cannot say where an error is. English only."
+ },
+ "benches": {
+  "pope_adversarial": {
+   "n": 3000,
+   "served": 0.7703513281919452,
+   "wall_s": 11.8,
+   "offline": 0.7694944301628106,
+   "top_answer_agreement": 0.9986666666666667,
+   "max_abs_prob_diff": 0.01239935332171549
+  },
+  "aokvqa_val": {
+   "n": 1145,
+   "served": 0.39050701186623515,
+   "wall_s": 19.8,
+   "offline": 0.3883495145631068,
+   "top_answer_agreement": 0.994759825327511,
+   "max_abs_prob_diff": 0.3958794364222648
+  },
+  "koniq_test": {
+   "n": 2015,
+   "served": 0.5047664361514933,
+   "wall_s": 34.0,
+   "offline": 0.505288942403446,
+   "top_answer_agreement": 0.998014888337469,
+   "max_abs_prob_diff": 0.005417492768447718
+  },
+  "vqav2_val_yesno": {
+   "n": 6813,
+   "served": 0.6013563049853372,
+   "wall_s": 54.4,
+   "offline": 0.6013563049853372,
+   "top_answer_agreement": 0.9944224277117276,
+   "max_abs_prob_diff": 0.010866983874639413,
+   "breakdown": [
+    {
+     "group": "about people (man, woman, child, ...)",
+     "n": 1640,
+     "acc": 0.6073170731707317,
+     "gold_yes_share": 0.49146341463414633,
+     "p_yes_when_yes": 0.5334017369727048,
+     "p_yes_when_no": 0.438513788968825
+    },
+    {
+     "group": "type: is the",
+     "n": 1307,
+     "acc": 0.5921958684009181,
+     "gold_yes_share": 0.5057383320581484,
+     "p_yes_when_yes": 0.5229340393343419,
+     "p_yes_when_no": 0.45868761609907116
+    },
+    {
+     "group": "'Is there a X', X not a COCO name",
+     "n": 972,
+     "acc": 0.6162551440329218,
+     "gold_yes_share": 0.5308641975308642,
+     "p_yes_when_yes": 0.5624767441860464,
+     "p_yes_when_no": 0.4226508771929824
+    },
+    {
+     "group": "type: is this",
+     "n": 607,
+     "acc": 0.6293245469522241,
+     "gold_yes_share": 0.4794069192751236,
+     "p_yes_when_yes": 0.5605302405498283,
+     "p_yes_when_no": 0.45828037974683544
+    },
+    {
+     "group": "type: is this a",
+     "n": 566,
+     "acc": 0.6537102473498233,
+     "gold_yes_share": 0.508833922261484,
+     "p_yes_when_yes": 0.532075,
+     "p_yes_when_no": 0.4034381294964029
+    },
+    {
+     "group": "type: are the",
+     "n": 436,
+     "acc": 0.6261467889908257,
+     "gold_yes_share": 0.4793577981651376,
+     "p_yes_when_yes": 0.5523119617224881,
+     "p_yes_when_no": 0.45210396475770925
+    },
+    {
+     "group": "type: is there a",
+     "n": 396,
+     "acc": 0.6212121212121212,
+     "gold_yes_share": 0.5378787878787878,
+     "p_yes_when_yes": 0.5562267605633802,
+     "p_yes_when_no": 0.40245737704918033
+    },
+    {
+     "group": "type: none of the above",
+     "n": 334,
+     "acc": 0.5688622754491018,
+     "gold_yes_share": 0.5299401197604791,
+     "p_yes_when_yes": 0.522880790960452,
+     "p_yes_when_no": 0.4549936305732484
+    },
+    {
+     "group": "type: does the",
+     "n": 278,
+     "acc": 0.5575539568345323,
+     "gold_yes_share": 0.5251798561151079,
+     "p_yes_when_yes": 0.5228287671232876,
+     "p_yes_when_no": 0.47795984848484846
+    },
+    {
+     "group": "type: is there",
+     "n": 271,
+     "acc": 0.5535055350553506,
+     "gold_yes_share": 0.5424354243542435,
+     "p_yes_when_yes": 0.5589074829931974,
+     "p_yes_when_no": 0.4511233870967742
+    },
+    {
+     "group": "type: is it",
+     "n": 269,
+     "acc": 0.654275092936803,
+     "gold_yes_share": 0.550185873605948,
+     "p_yes_when_yes": 0.5602952702702703,
+     "p_yes_when_no": 0.37219669421487606
+    },
+    {
+     "group": "type: is",
+     "n": 261,
+     "acc": 0.5363984674329502,
+     "gold_yes_share": 0.49808429118773945,
+     "p_yes_when_yes": 0.4954192307692308,
+     "p_yes_when_no": 0.44531145038167946
+    },
+    {
+     "group": "type: are there",
+     "n": 233,
+     "acc": 0.6995708154506438,
+     "gold_yes_share": 0.51931330472103,
+     "p_yes_when_yes": 0.6090190082644628,
+     "p_yes_when_no": 0.4197741071428572
+    },
+    {
+     "group": "type: are these",
+     "n": 224,
+     "acc": 0.6517857142857143,
+     "gold_yes_share": 0.48660714285714285,
+     "p_yes_when_yes": 0.5339724770642202,
+     "p_yes_when_no": 0.4119939130434782
+    },
+    {
+     "group": "type: are",
+     "n": 209,
+     "acc": 0.5454545454545454,
+     "gold_yes_share": 0.47368421052631576,
+     "p_yes_when_yes": 0.5057858585858586,
+     "p_yes_when_no": 0.46062000000000003
+    },
+    {
+     "group": "type: does this",
+     "n": 185,
+     "acc": 0.5783783783783784,
+     "gold_yes_share": 0.5513513513513514,
+     "p_yes_when_yes": 0.5582647058823529,
+     "p_yes_when_no": 0.49205783132530123
+    },
+    {
+     "group": "type: is the man",
+     "n": 169,
+     "acc": 0.5739644970414202,
+     "gold_yes_share": 0.47928994082840237,
+     "p_yes_when_yes": 0.5362123456790123,
+     "p_yes_when_no": 0.4608715909090909
+    },
+    {
+     "group": "type: do",
+     "n": 128,
+     "acc": 0.640625,
+     "gold_yes_share": 0.65625,
+     "p_yes_when_yes": 0.5825488095238095,
+     "p_yes_when_no": 0.5193931818181818
+    },
+    {
+     "group": "type: are there any",
+     "n": 126,
+     "acc": 0.6031746031746031,
+     "gold_yes_share": 0.4603174603174603,
+     "p_yes_when_yes": 0.5555862068965518,
+     "p_yes_when_no": 0.41284999999999994
+    },
+    {
+     "group": "type: are they",
+     "n": 95,
+     "acc": 0.6947368421052632,
+     "gold_yes_share": 0.4105263157894737,
+     "p_yes_when_yes": 0.5388538461538461,
+     "p_yes_when_no": 0.393875
+    },
+    {
+     "group": "type: is he",
+     "n": 91,
+     "acc": 0.6153846153846154,
+     "gold_yes_share": 0.5164835164835165,
+     "p_yes_when_yes": 0.5138085106382978,
+     "p_yes_when_no": 0.39408181818181814
+    },
+    {
+     "group": "type: has",
+     "n": 84,
+     "acc": 0.5476190476190477,
+     "gold_yes_share": 0.5595238095238095,
+     "p_yes_when_yes": 0.4872425531914893,
+     "p_yes_when_no": 0.41226486486486486
+    },
+    {
+     "group": "type: is this an",
+     "n": 79,
+     "acc": 0.569620253164557,
+     "gold_yes_share": 0.569620253164557,
+     "p_yes_when_yes": 0.5370155555555556,
+     "p_yes_when_no": 0.4611029411764706
+    },
+    {
+     "group": "type: is the woman",
+     "n": 74,
+     "acc": 0.5945945945945946,
+     "gold_yes_share": 0.6351351351351351,
+     "p_yes_when_yes": 0.5088617021276596,
+     "p_yes_when_no": 0.429725925925926
+    },
+    {
+     "group": "type: can you",
+     "n": 70,
+     "acc": 0.5142857142857142,
+     "gold_yes_share": 0.42857142857142855,
+     "p_yes_when_yes": 0.45064666666666664,
+     "p_yes_when_no": 0.3988075
+    },
+    {
+     "group": "type: do you",
+     "n": 62,
+     "acc": 0.7419354838709677,
+     "gold_yes_share": 0.46774193548387094,
+     "p_yes_when_yes": 0.6458241379310345,
+     "p_yes_when_no": 0.3988424242424242
+    },
+    {
+     "group": "type: was",
+     "n": 57,
+     "acc": 0.7368421052631579,
+     "gold_yes_share": 0.40350877192982454,
+     "p_yes_when_yes": 0.5348391304347826,
+     "p_yes_when_no": 0.37728823529411765
+    },
+    {
+     "group": "type: is that a",
+     "n": 56,
+     "acc": 0.6071428571428571,
+     "gold_yes_share": 0.44642857142857145,
+     "p_yes_when_yes": 0.50534,
+     "p_yes_when_no": 0.35532258064516126
+    },
+    {
+     "group": "'Is there a X', X a COCO name",
+     "n": 53,
+     "acc": 0.6792452830188679,
+     "gold_yes_share": 0.41509433962264153,
+     "p_yes_when_yes": 0.7214499999999999,
+     "p_yes_when_no": 0.3854419354838709
+    },
+    {
+     "group": "type: is the person",
+     "n": 52,
+     "acc": 0.5192307692307693,
+     "gold_yes_share": 0.4423076923076923,
+     "p_yes_when_yes": 0.4855043478260869,
+     "p_yes_when_no": 0.4428103448275862
+    },
+    {
+     "group": "type: is this person",
+     "n": 49,
+     "acc": 0.5714285714285714,
+     "gold_yes_share": 0.4489795918367347,
+     "p_yes_when_yes": 0.5197818181818182,
+     "p_yes_when_no": 0.45151111111111114
+    },
+    {
+     "group": "type: could",
+     "n": 44,
+     "acc": 0.5909090909090909,
+     "gold_yes_share": 0.5909090909090909,
+     "p_yes_when_yes": 0.5576846153846154,
+     "p_yes_when_no": 0.4864
+    },
+    {
+     "group": "type: what",
+     "n": 1,
+     "acc": 1.0,
+     "gold_yes_share": 0.0,
+     "p_yes_when_yes": null,
+     "p_yes_when_no": 0.4578
+    }
+   ]
+  },
+  "had_val_any": {
+   "n": 4173,
+   "served": 0.6655718124813377,
+   "wall_s": 74.8,
+   "offline": 0.6649746192893401,
+   "top_answer_agreement": 0.9990414569853823,
+   "max_abs_prob_diff": 0.006264986522733329
+  },
+  "salart_q1": {
+   "n": 755,
+   "served": 0.6738768718801996,
+   "wall_s": 17.6,
+   "offline": 0.6722129783693843,
+   "top_answer_agreement": 0.9986754966887417,
+   "max_abs_prob_diff": 0.01849033572707323
+  }
+ },
+ "latency_ms": {
+  "new_image": {
+   "n": 11405,
+   "p50": 16.62,
+   "p95": 22.32
+  }
+ }
+}

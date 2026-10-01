@@ -1,0 +1,64 @@
+[project]
+name = "glance"
+version = "0.0.1"
+description = "Glance: fast typed decisions (yes/no, choice, score) about images on a CPU"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.5",
+    "torchvision",
+    "transformers>=4.57",
+    "accelerate",
+    "datasets>=3.0",
+    "huggingface_hub",
+    "pillow",
+    "numpy",
+    "scipy",
+    "pandas",
+    "pyarrow",
+    "num2words",
+    "sentencepiece",
+    "protobuf",
+    "tqdm",
+    "safetensors",
+    "onnxruntime>=1.20",
+]
+
+[project.optional-dependencies]
+# MLX ports (glance/mlx, tests/test_mlx.py, scripts/latency_mlx.py, the Snake engine): Apple silicon only.
+mlx = [
+    "mlx>=0.32.2; sys_platform == 'darwin' and platform_machine == 'arm64'",
+]
+# Exporting a release package to ONNX (scripts/export_release.py --add-onnx).
+export = [
+    "onnx>=1.17",
+    "onnxscript>=0.2",
+]
+bench = [
+    "laya==0.3.9",  # the Snake results used 0.3.8, since removed from PyPI
+    "laya-mlx==0.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["glance"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "relplot>=1.0.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.lint]
+ignore = ["E731", "E741"]  # assigned lambdas and single-letter loop names are used deliberately in short scripts
+
+[tool.uv]
+environments = ["sys_platform == 'darwin'", "sys_platform == 'linux'"]

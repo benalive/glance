@@ -1,0 +1,402 @@
+{
+ "salart": {
+  "Glance C5 open-licence release (ours; v4 seed 0, package calibration)": {
+   "artifact_recall": 44.8512585812357,
+   "artifact_all4": 0.4576659038901602,
+   "real_specificity": 97.16981132075472,
+   "real_all4": 0.0,
+   "overall_q1": 66.88741721854305,
+   "overall_all4": 0.26490066225165565,
+   "q1_auroc": 0.9113092411093361,
+   "recall_by_type": {
+    "count_anomaly": 65.97938144329896,
+    "topology_anomaly": 41.32231404958678,
+    "anatomy_anomaly": 31.666666666666664,
+    "local_render_structure_anomaly": 47.368421052631575,
+    "plausibility_anomaly": 43.58974358974359,
+    "NA": 0.0
+   },
+   "q2_acc_artifact": 15.102974828375288,
+   "q3_acc_artifact": 24.02745995423341,
+   "q4_acc_artifact": 34.09610983981693
+  },
+  "Glance C5 distilled from C1 (ours)": {
+   "artifact_recall": 79.17620137299771,
+   "artifact_all4": 0.9153318077803204,
+   "real_specificity": 88.36477987421384,
+   "real_all4": 0.3144654088050315,
+   "overall_q1": 83.04635761589404,
+   "overall_all4": 0.6622516556291391,
+   "q1_auroc": 0.9036814760445001,
+   "recall_by_type": {
+    "count_anomaly": 94.84536082474226,
+    "topology_anomaly": 75.20661157024794,
+    "anatomy_anomaly": 74.16666666666667,
+    "local_render_structure_anomaly": 78.94736842105263,
+    "plausibility_anomaly": 71.7948717948718,
+    "NA": 33.33333333333333
+   },
+   "q2_acc_artifact": 16.933638443935926,
+   "q3_acc_artifact": 12.814645308924485,
+   "q4_acc_artifact": 30.892448512585812
+  },
+  "Glance C5, same data without the teacher (ours; control)": {
+   "artifact_recall": 73.4553775743707,
+   "artifact_all4": 2.9748283752860414,
+   "real_specificity": 73.27044025157232,
+   "real_all4": 0.0,
+   "overall_q1": 73.37748344370861,
+   "overall_all4": 1.7218543046357615,
+   "q1_auroc": 0.8211648892534865,
+   "recall_by_type": {
+    "count_anomaly": 89.69072164948454,
+    "topology_anomaly": 70.24793388429752,
+    "anatomy_anomaly": 65.83333333333333,
+    "local_render_structure_anomaly": 77.19298245614034,
+    "plausibility_anomaly": 64.1025641025641,
+    "NA": 33.33333333333333
+   },
+   "q2_acc_artifact": 19.221967963386728,
+   "q3_acc_artifact": 27.45995423340961,
+   "q4_acc_artifact": 36.15560640732266
+  },
+  "Glance C5 + AI-image errors (ours)": {
+   "artifact_recall": 88.78718535469108,
+   "artifact_all4": 2.2883295194508007,
+   "real_specificity": 65.40880503144653,
+   "real_all4": 0.0,
+   "overall_q1": 78.94039735099338,
+   "overall_all4": 1.3245033112582782,
+   "q1_auroc": 0.8790567476936805,
+   "recall_by_type": {
+    "count_anomaly": 97.9381443298969,
+    "topology_anomaly": 87.60330578512396,
+    "anatomy_anomaly": 88.33333333333333,
+    "local_render_structure_anomaly": 84.21052631578947,
+    "plausibility_anomaly": 79.48717948717949,
+    "NA": 66.66666666666666
+   },
+   "q2_acc_artifact": 13.501144164759726,
+   "q3_acc_artifact": 28.37528604118993,
+   "q4_acc_artifact": 39.588100686498855
+  },
+  "Glance C1 + AI-image errors (ours; teacher, too slow to ship)": {
+   "artifact_recall": 82.6086956521739,
+   "artifact_all4": 2.745995423340961,
+   "real_specificity": 89.62264150943396,
+   "real_all4": 0.0,
+   "overall_q1": 85.56291390728477,
+   "overall_all4": 1.5894039735099337,
+   "q1_auroc": 0.9283277924096541,
+   "recall_by_type": {
+    "count_anomaly": 94.84536082474226,
+    "topology_anomaly": 77.68595041322314,
+    "anatomy_anomaly": 80.83333333333333,
+    "local_render_structure_anomaly": 82.45614035087719,
+    "plausibility_anomaly": 71.7948717948718,
+    "NA": 100.0
+   },
+   "q2_acc_artifact": 31.80778032036613,
+   "q3_acc_artifact": 21.96796338672769,
+   "q4_acc_artifact": 31.80778032036613
+  },
+  "Glance C1 (ours)": {
+   "artifact_recall": 1.3729977116704806,
+   "artifact_all4": 0.0,
+   "real_specificity": 97.48427672955975,
+   "real_all4": 0.0,
+   "overall_q1": 41.85430463576159,
+   "overall_all4": 0.0,
+   "q1_auroc": 0.4755695637781904,
+   "recall_by_type": {
+    "count_anomaly": 2.0618556701030926,
+    "topology_anomaly": 0.0,
+    "anatomy_anomaly": 0.8333333333333334,
+    "local_render_structure_anomaly": 5.263157894736842,
+    "plausibility_anomaly": 0.0,
+    "NA": 0.0
+   },
+   "q2_acc_artifact": 26.773455377574372,
+   "q3_acc_artifact": 22.65446224256293,
+   "q4_acc_artifact": 38.672768878718536
+  },
+  "Glance C5 (ours)": {
+   "artifact_recall": 0.0,
+   "artifact_all4": 0.0,
+   "real_specificity": 100.0,
+   "real_all4": 0.0,
+   "overall_q1": 42.11920529801325,
+   "overall_all4": 0.0,
+   "q1_auroc": 0.6165392973820935,
+   "recall_by_type": {
+    "count_anomaly": 0.0,
+    "topology_anomaly": 0.0,
+    "anatomy_anomaly": 0.0,
+    "local_render_structure_anomaly": 0.0,
+    "plausibility_anomaly": 0.0,
+    "NA": 0.0
+   },
+   "q2_acc_artifact": 16.933638443935926,
+   "q3_acc_artifact": 32.494279176201374,
+   "q4_acc_artifact": 27.68878718535469
+  },
+  "Qwen3-VL-2B (run here)": {
+   "artifact_recall": 99.31350114416476,
+   "artifact_all4": 5.720823798627003,
+   "real_specificity": 2.20125786163522,
+   "real_all4": 0.0,
+   "overall_q1": 58.41059602649007,
+   "overall_all4": 3.3112582781456954,
+   "q1_auroc": 0.7248607573075428,
+   "recall_by_type": {
+    "count_anomaly": 100.0,
+    "topology_anomaly": 100.0,
+    "anatomy_anomaly": 97.5,
+    "local_render_structure_anomaly": 100.0,
+    "plausibility_anomaly": 100.0,
+    "NA": 100.0
+   },
+   "q2_acc_artifact": 28.604118993135014,
+   "q3_acc_artifact": 29.51945080091533,
+   "q4_acc_artifact": 28.37528604118993
+  }
+ },
+ "salart_no_overlap": {
+  "Glance C5 open-licence release (ours; v4 seed 0, package calibration)": {
+   "artifact_recall": 44.8512585812357,
+   "artifact_all4": 0.4576659038901602,
+   "real_specificity": 96.53679653679653,
+   "real_all4": 0.0,
+   "overall_q1": 62.72455089820359,
+   "overall_all4": 0.29940119760479045,
+   "q1_auroc": 0.9048906852110513,
+   "recall_by_type": {
+    "count_anomaly": 65.97938144329896,
+    "topology_anomaly": 41.32231404958678,
+    "anatomy_anomaly": 31.666666666666664,
+    "local_render_structure_anomaly": 47.368421052631575,
+    "plausibility_anomaly": 43.58974358974359,
+    "NA": 0.0
+   },
+   "q2_acc_artifact": 15.102974828375288,
+   "q3_acc_artifact": 24.02745995423341,
+   "q4_acc_artifact": 34.09610983981693
+  },
+  "Glance C5 distilled from C1 (ours)": {
+   "artifact_recall": 79.17620137299771,
+   "artifact_all4": 0.9153318077803204,
+   "real_specificity": 89.17748917748918,
+   "real_all4": 0.0,
+   "overall_q1": 82.63473053892216,
+   "overall_all4": 0.5988023952095809,
+   "q1_auroc": 0.9095664061339118,
+   "recall_by_type": {
+    "count_anomaly": 94.84536082474226,
+    "topology_anomaly": 75.20661157024794,
+    "anatomy_anomaly": 74.16666666666667,
+    "local_render_structure_anomaly": 78.94736842105263,
+    "plausibility_anomaly": 71.7948717948718,
+    "NA": 33.33333333333333
+   },
+   "q2_acc_artifact": 16.933638443935926,
+   "q3_acc_artifact": 12.814645308924485,
+   "q4_acc_artifact": 30.892448512585812
+  },
+  "Glance C5, same data without the teacher (ours; control)": {
+   "artifact_recall": 73.4553775743707,
+   "artifact_all4": 2.9748283752860414,
+   "real_specificity": 71.86147186147186,
+   "real_all4": 0.0,
+   "overall_q1": 72.90419161676647,
+   "overall_all4": 1.9461077844311379,
+   "q1_auroc": 0.8230457566842007,
+   "recall_by_type": {
+    "count_anomaly": 89.69072164948454,
+    "topology_anomaly": 70.24793388429752,
+    "anatomy_anomaly": 65.83333333333333,
+    "local_render_structure_anomaly": 77.19298245614034,
+    "plausibility_anomaly": 64.1025641025641,
+    "NA": 33.33333333333333
+   },
+   "q2_acc_artifact": 19.221967963386728,
+   "q3_acc_artifact": 27.45995423340961,
+   "q4_acc_artifact": 36.15560640732266
+  },
+  "Glance C5 + AI-image errors (ours)": {
+   "artifact_recall": 88.78718535469108,
+   "artifact_all4": 2.2883295194508007,
+   "real_specificity": 67.09956709956711,
+   "real_all4": 0.0,
+   "overall_q1": 81.2874251497006,
+   "overall_all4": 1.4970059880239521,
+   "q1_auroc": 0.8839787215073256,
+   "recall_by_type": {
+    "count_anomaly": 97.9381443298969,
+    "topology_anomaly": 87.60330578512396,
+    "anatomy_anomaly": 88.33333333333333,
+    "local_render_structure_anomaly": 84.21052631578947,
+    "plausibility_anomaly": 79.48717948717949,
+    "NA": 66.66666666666666
+   },
+   "q2_acc_artifact": 13.501144164759726,
+   "q3_acc_artifact": 28.37528604118993,
+   "q4_acc_artifact": 39.588100686498855
+  },
+  "Glance C1 + AI-image errors (ours; teacher, too slow to ship)": {
+   "artifact_recall": 82.6086956521739,
+   "artifact_all4": 2.745995423340961,
+   "real_specificity": 90.47619047619048,
+   "real_all4": 0.0,
+   "overall_q1": 85.32934131736528,
+   "overall_all4": 1.7964071856287425,
+   "q1_auroc": 0.9315878629379774,
+   "recall_by_type": {
+    "count_anomaly": 94.84536082474226,
+    "topology_anomaly": 77.68595041322314,
+    "anatomy_anomaly": 80.83333333333333,
+    "local_render_structure_anomaly": 82.45614035087719,
+    "plausibility_anomaly": 71.7948717948718,
+    "NA": 100.0
+   },
+   "q2_acc_artifact": 31.80778032036613,
+   "q3_acc_artifact": 21.96796338672769,
+   "q4_acc_artifact": 31.80778032036613
+  },
+  "Glance C1 (ours)": {
+   "artifact_recall": 1.3729977116704806,
+   "artifact_all4": 0.0,
+   "real_specificity": 97.83549783549783,
+   "real_all4": 0.0,
+   "overall_q1": 34.73053892215569,
+   "overall_all4": 0.0,
+   "q1_auroc": 0.4682952440389511,
+   "recall_by_type": {
+    "count_anomaly": 2.0618556701030926,
+    "topology_anomaly": 0.0,
+    "anatomy_anomaly": 0.8333333333333334,
+    "local_render_structure_anomaly": 5.263157894736842,
+    "plausibility_anomaly": 0.0,
+    "NA": 0.0
+   },
+   "q2_acc_artifact": 26.773455377574372,
+   "q3_acc_artifact": 22.65446224256293,
+   "q4_acc_artifact": 38.672768878718536
+  },
+  "Glance C5 (ours)": {
+   "artifact_recall": 0.0,
+   "artifact_all4": 0.0,
+   "real_specificity": 100.0,
+   "real_all4": 0.0,
+   "overall_q1": 34.58083832335329,
+   "overall_all4": 0.0,
+   "q1_auroc": 0.616422479122708,
+   "recall_by_type": {
+    "count_anomaly": 0.0,
+    "topology_anomaly": 0.0,
+    "anatomy_anomaly": 0.0,
+    "local_render_structure_anomaly": 0.0,
+    "plausibility_anomaly": 0.0,
+    "NA": 0.0
+   },
+   "q2_acc_artifact": 16.933638443935926,
+   "q3_acc_artifact": 32.494279176201374,
+   "q4_acc_artifact": 27.68878718535469
+  },
+  "Qwen3-VL-2B (run here)": {
+   "artifact_recall": 99.31350114416476,
+   "artifact_all4": 5.720823798627003,
+   "real_specificity": 1.7316017316017316,
+   "real_all4": 0.0,
+   "overall_q1": 65.5688622754491,
+   "overall_all4": 3.74251497005988,
+   "q1_auroc": 0.7410522353314115,
+   "recall_by_type": {
+    "count_anomaly": 100.0,
+    "topology_anomaly": 100.0,
+    "anatomy_anomaly": 97.5,
+    "local_render_structure_anomaly": 100.0,
+    "plausibility_anomaly": 100.0,
+    "NA": 100.0
+   },
+   "q2_acc_artifact": 28.604118993135014,
+   "q3_acc_artifact": 29.51945080091533,
+   "q4_acc_artifact": 28.37528604118993
+  }
+ },
+ "artibench": {
+  "Glance C5 open-licence release (ours; v4 seed 0, package calibration)": {
+   "acc": 0.571,
+   "macro_f1": 0.494508524424429,
+   "auroc": 0.667308,
+   "said_yes": 0.111
+  },
+  "Glance C5 distilled from C1 (ours)": {
+   "acc": 0.584,
+   "macro_f1": 0.5802914552990222,
+   "auroc": 0.628552,
+   "said_yes": 0.594
+  },
+  "Glance C5, same data without the teacher (ours; control)": {
+   "acc": 0.571,
+   "macro_f1": 0.5612595226626331,
+   "auroc": 0.616824,
+   "said_yes": 0.649
+  },
+  "Glance C5 + AI-image errors (ours)": {
+   "acc": 0.597,
+   "macro_f1": 0.5957772261089798,
+   "auroc": 0.632764,
+   "said_yes": 0.555
+  },
+  "Glance C1 + AI-image errors (ours; teacher, too slow to ship)": {
+   "acc": 0.593,
+   "macro_f1": 0.5921741526591348,
+   "auroc": 0.644796,
+   "said_yes": 0.545
+  },
+  "Glance C1 (ours)": {
+   "acc": 0.499,
+   "macro_f1": 0.3752922472645656,
+   "auroc": 0.502144,
+   "said_yes": 0.055
+  },
+  "Glance C5 (ours)": {
+   "acc": 0.5,
+   "macro_f1": 0.3333333333333333,
+   "auroc": 0.51728,
+   "said_yes": 0.0
+  },
+  "Qwen3-VL-2B (run here)": {
+   "acc": 0.469,
+   "macro_f1": 0.42417739240196106,
+   "auroc": 0.40898,
+   "said_yes": 0.221
+  }
+ },
+ "abench_generative": {
+  "Glance C5 open-licence release (ours; v4 seed 0, package calibration)": {
+   "acc": 36.4
+  },
+  "Glance C5 distilled from C1 (ours)": {
+   "acc": 29.599999999999998
+  },
+  "Glance C5, same data without the teacher (ours; control)": {
+   "acc": 31.2
+  },
+  "Glance C5 + AI-image errors (ours)": {
+   "acc": 29.2
+  },
+  "Glance C1 + AI-image errors (ours; teacher, too slow to ship)": {
+   "acc": 34.4
+  },
+  "Glance C1 (ours)": {
+   "acc": 36.0
+  },
+  "Glance C5 (ours)": {
+   "acc": 24.4
+  },
+  "Qwen3-VL-2B (run here)": {
+   "acc": 62.8
+  }
+ }
+}

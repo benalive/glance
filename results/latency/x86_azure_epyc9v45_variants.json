@@ -1,0 +1,52 @@
+{
+ "machine": "Azure VM, AMD EPYC 9V45 (Zen 5), 16 cores / 32 threads, AVX-512 incl. BF16/VNNI; torch 2.14.0+cpu; onnxruntime 1.30.0; release package glance-c5-open-v4; 30 photos; fidelity on 20 photos x 4 questions (78 answers with fp32 margin > 0.05); run by the user 2026-09-29",
+ "note": "all rows ran at 4 threads: Predictor reset the thread count to its default (fixed in bench_variants.py afterwards)",
+ "ms_median_4_threads": {
+  "fp32": {
+   "new_1q": 57.28,
+   "new_4q": 63.9,
+   "cached_1q": 7.3,
+   "cached_4q": 13.85,
+   "cached_8q": 22.57,
+   "max_abs_p_diff": 0.0,
+   "flips": 0.0
+  },
+  "bf16": {
+   "new_1q": 31.77,
+   "new_4q": 38.76,
+   "cached_1q": 7.35,
+   "cached_4q": 14.17,
+   "cached_8q": 22.33,
+   "max_abs_p_diff": 0.0494,
+   "flips": 0.0
+  },
+  "int8": {
+   "new_1q": 20.79,
+   "new_4q": 23.61,
+   "cached_1q": 4.29,
+   "cached_4q": 7.2,
+   "cached_8q": 10.45,
+   "max_abs_p_diff": 0.807,
+   "flips": 0.1282
+  },
+  "compile": {
+   "new_1q": 55.88,
+   "new_4q": 61.97,
+   "cached_1q": 6.97,
+   "cached_4q": 12.94,
+   "cached_8q": 20.89,
+   "max_abs_p_diff": 0.0,
+   "flips": 0.0,
+   "setup_s": 73.3
+  },
+  "onnx-image": {
+   "new_1q": 28.79,
+   "new_4q": 35.31,
+   "cached_1q": 7.41,
+   "cached_4q": 13.86,
+   "cached_8q": 22.5,
+   "max_abs_p_diff": 0.0001,
+   "flips": 0.0
+  }
+ }
+}

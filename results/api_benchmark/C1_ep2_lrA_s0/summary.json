@@ -1,0 +1,31 @@
+{
+ "server": {
+  "status": "ok",
+  "model": "glance-C1",
+  "checkpoint": "C1_ep2_lrA_s0.pt",
+  "device": "cpu",
+  "calibrated": [
+   "choice",
+   "noul",
+   "score"
+  ],
+  "image_cache": 2
+ },
+ "benches": {
+  "pope_adversarial": {
+   "n": 3000,
+   "served": 0.8127677806341045,
+   "wall_s": 2100.3,
+   "offline": 0.8140531276778064,
+   "top_answer_agreement": 0.9973333333333333,
+   "max_abs_prob_diff": 0.038658935899752556
+  }
+ },
+ "latency_ms": {
+  "new_image": {
+   "n": 500,
+   "p50": 228.075,
+   "p95": 245.49699999999996
+  }
+ }
+}

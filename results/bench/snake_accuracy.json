@@ -1,0 +1,320 @@
+{
+ "meta": {
+  "seed": 20011,
+  "boards": 2000,
+  "games": 101,
+  "per_game_cap": 20,
+  "training_boards_dropped": 596,
+  "report_boards": 1601,
+  "report_games": 81,
+  "majority_baseline_report": 0.29918800749531543
+ },
+ "rows": [
+  {
+   "model": "Greedy rule (fact lines)",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.981261711430356,
+   "top1_ci95": [
+    0.9725171767645222,
+    0.9887570268582137
+   ],
+   "tie_aware": 0.981261711430356,
+   "legal": 1.0,
+   "trap_n": 24,
+   "trap_top1": 0.0,
+   "nll": 0.25888202356759743,
+   "brier": 0.03747642724542904,
+   "smece": 0.018735288578644108,
+   "T": 2.6962547825711574,
+   "nll_T": 0.11371389195647207,
+   "brier_T": 0.037010314704652617,
+   "smece_T": 2.8925090996396774e-07
+  },
+  {
+   "model": "Greedy rule (planner key)",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.9850093691442848,
+   "top1_ci95": [
+    0.9777777777777777,
+    0.9910455556876666
+   ],
+   "tie_aware": 0.9850093691442848,
+   "legal": 1.0,
+   "trap_n": 24,
+   "trap_top1": 0.0,
+   "nll": 0.2071062188531779,
+   "brier": 0.029981141798743217,
+   "smece": 0.014987630864715301,
+   "T": 2.6962547825711574,
+   "nll_T": 0.09451103136291719,
+   "brier_T": 0.029690328409385507,
+   "smece_T": 6.183158664134756e-07
+  },
+  {
+   "model": "Laya-snake (text)",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.981261711430356,
+   "top1_ci95": [
+    0.9725171767645222,
+    0.9887570268582137
+   ],
+   "tie_aware": 0.981261711430356,
+   "legal": 1.0,
+   "trap_n": 24,
+   "trap_top1": 0.0,
+   "nll": 0.06708960327579651,
+   "brier": 0.03239027879450343,
+   "smece": 0.009534508860582611,
+   "T": 0.9735695759455036,
+   "nll_T": 0.0674141677885702,
+   "brier_T": 0.032531975673180204,
+   "smece_T": 0.009128636444109597
+  },
+  {
+   "model": "Glance C5 text",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.981261711430356,
+   "top1_ci95": [
+    0.9725171767645222,
+    0.9887570268582137
+   ],
+   "tie_aware": 0.981261711430356,
+   "legal": 1.0,
+   "trap_n": 24,
+   "trap_top1": 0.0,
+   "nll": 0.0955190778704241,
+   "brier": 0.03648567403493316,
+   "smece": 0.010632160103021692,
+   "T": 0.921086316088624,
+   "nll_T": 0.09836996746835387,
+   "brier_T": 0.03642234979617605,
+   "smece_T": 0.010818331638298918
+  },
+  {
+   "model": "Glance C5 image+facts",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.981261711430356,
+   "top1_ci95": [
+    0.9725171767645222,
+    0.9887570268582137
+   ],
+   "tie_aware": 0.981261711430356,
+   "legal": 1.0,
+   "trap_n": 24,
+   "trap_top1": 0.0,
+   "nll": 0.11158126140652663,
+   "brier": 0.036718821692369834,
+   "smece": 0.011950496006908786,
+   "T": 0.9446894241670397,
+   "nll_T": 0.11349006481661977,
+   "brier_T": 0.036555040209086224,
+   "smece_T": 0.010659979708744325
+  },
+  {
+   "model": "Glance C5 image+facts (100k boards)",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.9818863210493441,
+   "top1_ci95": [
+    0.9743830823328014,
+    0.9886253732062215
+   ],
+   "tie_aware": 0.9818863210493441,
+   "legal": 1.0,
+   "trap_n": 24,
+   "trap_top1": 0.125,
+   "nll": 0.0560926390571473,
+   "brier": 0.02844799267696907,
+   "smece": 0.008379168299044105,
+   "T": 0.7428700595077511,
+   "nll_T": 0.06132587245426386,
+   "brier_T": 0.028624765304208502,
+   "smece_T": 0.009856529992497967
+  },
+  {
+   "model": "Glance C6s image",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.6002498438475953,
+   "top1_ci95": [
+    0.5783948978647604,
+    0.6227383830322097
+   ],
+   "tie_aware": 0.6689569019362899,
+   "legal": 0.9231730168644597,
+   "trap_n": 24,
+   "trap_top1": 0.3333333333333333,
+   "nll": 0.9961892783668046,
+   "brier": 0.532195167674832,
+   "smece": 0.03680207685630652,
+   "T": 1.0281238687078744,
+   "nll_T": 0.9959687544728688,
+   "brier_T": 0.5326510543668818,
+   "smece_T": 0.03900454455161262
+  },
+  {
+   "model": "Glance C6s image+aux",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.68894440974391,
+   "top1_ci95": [
+    0.6647432147134529,
+    0.7108059162479624
+   ],
+   "tie_aware": 0.7707682698313554,
+   "legal": 0.9344159900062461,
+   "trap_n": 24,
+   "trap_top1": 0.375,
+   "nll": 0.7771869340721489,
+   "brier": 0.42092161053896565,
+   "smece": 0.02765341601374298,
+   "T": 1.0827835331078952,
+   "nll_T": 0.7772130463761221,
+   "brier_T": 0.42183178112030834,
+   "smece_T": 0.032271797938670695
+  },
+  {
+   "model": "Glance C3 image+aux",
+   "n": 1601,
+   "games": 81,
+   "top1": 0.670206121174266,
+   "top1_ci95": [
+    0.6475246406330477,
+    0.6938329353373601
+   ],
+   "tie_aware": 0.7457838850718301,
+   "legal": 0.9256714553404123,
+   "trap_n": 24,
+   "trap_top1": 0.16666666666666666,
+   "nll": 0.8605787317558778,
+   "brier": 0.46630507400517485,
+   "smece": 0.024319524265014825,
+   "T": 1.047498531230165,
+   "nll_T": 0.8579718046759498,
+   "brier_T": 0.4661185413541621,
+   "smece_T": 0.023535091346492152
+  }
+ ],
+ "agreement_all_boards": {
+  "Greedy rule (fact lines)": {
+   "Greedy rule (fact lines)": 1.0,
+   "Greedy rule (planner key)": 0.997,
+   "Laya-snake (text)": 1.0,
+   "Glance C5 text": 1.0,
+   "Glance C5 image+facts": 1.0,
+   "Glance C5 image+facts (100k boards)": 0.9975,
+   "Glance C6s image": 0.6005,
+   "Glance C6s image+aux": 0.6825,
+   "Glance C3 image+aux": 0.67
+  },
+  "Greedy rule (planner key)": {
+   "Greedy rule (fact lines)": 0.997,
+   "Greedy rule (planner key)": 1.0,
+   "Laya-snake (text)": 0.997,
+   "Glance C5 text": 0.997,
+   "Glance C5 image+facts": 0.997,
+   "Glance C5 image+facts (100k boards)": 0.9945,
+   "Glance C6s image": 0.6,
+   "Glance C6s image+aux": 0.683,
+   "Glance C3 image+aux": 0.67
+  },
+  "Laya-snake (text)": {
+   "Greedy rule (fact lines)": 1.0,
+   "Greedy rule (planner key)": 0.997,
+   "Laya-snake (text)": 1.0,
+   "Glance C5 text": 1.0,
+   "Glance C5 image+facts": 1.0,
+   "Glance C5 image+facts (100k boards)": 0.9975,
+   "Glance C6s image": 0.6005,
+   "Glance C6s image+aux": 0.6825,
+   "Glance C3 image+aux": 0.67
+  },
+  "Glance C5 text": {
+   "Greedy rule (fact lines)": 1.0,
+   "Greedy rule (planner key)": 0.997,
+   "Laya-snake (text)": 1.0,
+   "Glance C5 text": 1.0,
+   "Glance C5 image+facts": 1.0,
+   "Glance C5 image+facts (100k boards)": 0.9975,
+   "Glance C6s image": 0.6005,
+   "Glance C6s image+aux": 0.6825,
+   "Glance C3 image+aux": 0.67
+  },
+  "Glance C5 image+facts": {
+   "Greedy rule (fact lines)": 1.0,
+   "Greedy rule (planner key)": 0.997,
+   "Laya-snake (text)": 1.0,
+   "Glance C5 text": 1.0,
+   "Glance C5 image+facts": 1.0,
+   "Glance C5 image+facts (100k boards)": 0.9975,
+   "Glance C6s image": 0.6005,
+   "Glance C6s image+aux": 0.6825,
+   "Glance C3 image+aux": 0.67
+  },
+  "Glance C5 image+facts (100k boards)": {
+   "Greedy rule (fact lines)": 0.9975,
+   "Greedy rule (planner key)": 0.9945,
+   "Laya-snake (text)": 0.9975,
+   "Glance C5 text": 0.9975,
+   "Glance C5 image+facts": 0.9975,
+   "Glance C5 image+facts (100k boards)": 1.0,
+   "Glance C6s image": 0.5995,
+   "Glance C6s image+aux": 0.6805,
+   "Glance C3 image+aux": 0.6675
+  },
+  "Glance C6s image": {
+   "Greedy rule (fact lines)": 0.6005,
+   "Greedy rule (planner key)": 0.6,
+   "Laya-snake (text)": 0.6005,
+   "Glance C5 text": 0.6005,
+   "Glance C5 image+facts": 0.6005,
+   "Glance C5 image+facts (100k boards)": 0.5995,
+   "Glance C6s image": 1.0,
+   "Glance C6s image+aux": 0.684,
+   "Glance C3 image+aux": 0.7025
+  },
+  "Glance C6s image+aux": {
+   "Greedy rule (fact lines)": 0.6825,
+   "Greedy rule (planner key)": 0.683,
+   "Laya-snake (text)": 0.6825,
+   "Glance C5 text": 0.6825,
+   "Glance C5 image+facts": 0.6825,
+   "Glance C5 image+facts (100k boards)": 0.6805,
+   "Glance C6s image": 0.684,
+   "Glance C6s image+aux": 1.0,
+   "Glance C3 image+aux": 0.7175
+  },
+  "Glance C3 image+aux": {
+   "Greedy rule (fact lines)": 0.67,
+   "Greedy rule (planner key)": 0.67,
+   "Laya-snake (text)": 0.67,
+   "Glance C5 text": 0.67,
+   "Glance C5 image+facts": 0.67,
+   "Glance C5 image+facts (100k boards)": 0.6675,
+   "Glance C6s image": 0.7025,
+   "Glance C6s image+aux": 0.7175,
+   "Glance C3 image+aux": 1.0
+  }
+ },
+ "paired_nll_minus_laya_report": {
+  "Glance C5 text": {
+   "diff": 0.028429474594627576,
+   "ci95": [
+    0.01480717636051092,
+    0.04424453499979226
+   ]
+  },
+  "Glance C5 image+facts": {
+   "diff": 0.04449165813073011,
+   "ci95": [
+    0.0249780791809167,
+    0.06894407818352301
+   ]
+  }
+ }
+}

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glance Playground</title>
+<style>
+  :root {
+    --bg: #f6f6f3; --surface: #ffffff; --surface-2: #f0efeb; --border: #dedcd6;
+    --ink: #1b1b19; --ink-2: #5b5a55; --ink-3: #8a8983;
+    --accent: #2a78d6; --accent-ink: #ffffff; --accent-soft: #dce9f9;
+    --bar: #c9c7c0; --bar-top: #2a78d6; --danger: #b3261e; --ok: #1b7f4a;
+    --radius: 10px; --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413; --surface: #1d1d1b; --surface-2: #262623; --border: #34332f;
+      --ink: #ecebe6; --ink-2: #b4b2ab; --ink-3: #85847d;
+      --accent: #5a9cf0; --accent-ink: #0d1b2e; --accent-soft: #1f3350;
+      --bar: #45443f; --bar-top: #5a9cf0; --danger: #f2877f; --ok: #6fd39c;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+           padding: 14px 20px; border-bottom: 1px solid var(--border); background: var(--surface); }
+  header h1 { font-size: 17px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
+  header h1 span { color: var(--ink-3); font-weight: 500; }
+  .pill { font-size: 12.5px; color: var(--ink-2); background: var(--surface-2); border: 1px solid var(--border);
+          border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+  .pill.bad { color: var(--danger); }
+  main { max-width: 1120px; margin: 0 auto; padding: 20px 16px 48px; display: grid;
+         grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 20px; }
+  @media (max-width: 820px) { main { grid-template-columns: minmax(0, 1fr); } }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+           box-shadow: var(--shadow); padding: 16px; }
+  .panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3);
+              margin: 0 0 12px; font-weight: 600; }
+  .drop { border: 1.5px dashed var(--border); border-radius: var(--radius); min-height: 220px; display: grid;
+          place-items: center; text-align: center; color: var(--ink-2); cursor: pointer; padding: 16px;
+          background: var(--surface-2); transition: border-color .15s, background .15s; position: relative; }
+  .drop:hover, .drop.over { border-color: var(--accent); background: var(--accent-soft); }
+  .drop img { max-width: 100%; max-height: 360px; border-radius: 6px; display: block; }
+  .drop small { color: var(--ink-3); display: block; margin-top: 6px; }
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .between { justify-content: space-between; }
+  label.lbl { display: block; font-size: 13px; color: var(--ink-2); margin: 14px 0 6px; }
+  textarea, input[type=text], select { width: 100%; font: inherit; color: var(--ink); background: var(--surface);
+          border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; }
+  textarea { resize: vertical; min-height: 64px; }
+  textarea:focus, input:focus, select:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+  button { font: inherit; border-radius: 8px; border: 1px solid var(--border); background: var(--surface);
+           color: var(--ink); padding: 7px 12px; cursor: pointer; }
+  button:hover { border-color: var(--ink-3); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600;
+                   padding: 9px 18px; }
+  button.primary:disabled { opacity: .6; cursor: progress; }
+  button.link { border: none; background: none; color: var(--ink-3); padding: 4px 6px; }
+  button.link:hover { color: var(--danger); }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  .chip { font-size: 13px; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); }
+  .q { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 10px; }
+  .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .seg button { border: none; border-radius: 0; padding: 5px 11px; font-size: 13px; color: var(--ink-2); }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button.on { background: var(--accent-soft); color: var(--ink); font-weight: 600; }
+  .q input[type=text] { margin-top: 4px; }
+  .q .qlabel { display: block; font-size: 12.5px; color: var(--ink-3); margin-top: 10px; }
+  .notice { font-size: 13.5px; color: var(--ink); background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; margin-top: 10px; }
+  details.ctx { margin-top: 14px; }
+  details.ctx summary { font-size: 13.5px; }
+  .hint { font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+  .result { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+  .answer { font-weight: 650; margin-bottom: 8px; }
+  .answer span { font-weight: 500; color: var(--ink-2); }
+  .bar { display: grid; grid-template-columns: minmax(70px, 30%) 1fr 52px; gap: 8px; align-items: center;
+         font-size: 13.5px; margin: 4px 0; }
+  .bar .name { color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar .track { display: block; height: 10px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+  .bar .fill { display: block; height: 100%; background: var(--bar); border-radius: 0 4px 4px 0; transition: width .25s; }
+  .bar.top .fill { background: var(--bar-top); }
+  .bar.top .name { color: var(--ink); font-weight: 600; }
+  .bar .pct { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  .timing { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .timing b { color: var(--ink); }
+  .err { color: var(--danger); font-size: 14px; margin-top: 10px; white-space: pre-wrap; }
+  details { margin-top: 16px; }
+  summary { cursor: pointer; color: var(--ink-2); font-size: 13.5px; }
+  pre { background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px;
+        font: 12.5px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; overflow-x: auto; max-height: 320px; }
+  footer { max-width: 1120px; margin: 0 auto; padding: 0 16px 28px; color: var(--ink-3); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Glance <span>playground</span></h1>
+  <div class="row"><span id="status" class="pill">connecting…</span></div>
+</header>
+
+<main>
+  <section class="panel">
+    <h2>Image</h2>
+    <div id="drop" class="drop" tabindex="0" role="button" aria-label="Choose an image">
+      <div id="dropHint">Drop an image here, paste it, or click to choose<small>PNG, JPEG or WebP. The image stays on this machine.</small></div>
+    </div>
+    <input id="file" type="file" accept="image/*" hidden>
+    <div class="row between" style="margin-top:8px">
+      <span id="imgInfo" class="hint"></span>
+      <button id="clearImg" class="link" hidden>Remove image</button>
+    </div>
+    <details class="ctx" id="ctxBox">
+      <summary>Add text context (optional)</summary>
+      <div class="hint" style="margin:6px 0">Background text sent along with every question, such as a page title or what the user asked for. Put the question itself in the Questions panel.</div>
+      <textarea id="state" placeholder="e.g. The user asked for a photo of their living room."></textarea>
+    </details>
+  </section>
+
+  <section class="panel">
+    <div class="row between"><h2>Questions</h2><span class="hint">Ctrl/⌘ + Enter to ask</span></div>
+    <div class="chips" id="examples"></div>
+    <div id="questions"></div>
+    <div class="row between" style="margin-top:4px">
+      <button id="addQ">+ Add question</button>
+      <button id="ask" class="primary">Ask</button>
+    </div>
+    <div id="notice" class="notice" hidden></div>
+    <div id="timing" class="timing" style="margin-top:12px"></div>
+    <div id="error" class="err"></div>
+    <details>
+      <summary>API request</summary>
+      <pre id="curl">Ask a question to see the equivalent API call.</pre>
+    </details>
+  </section>
+</main>
+
+<footer id="footer">
+  Research preview. Answers are probabilities over the options you give, from a small model running locally.
+  Measured through this server on held-out benchmarks, it answers “Is there a &lt;common object&gt;?” correctly
+  79–88% of the time (POPE; COCO's 80 object names such as person, cup, couch) and ranks photo quality well
+  (KonIQ-10k), but everyday yes/no questions such as “Is there a man?” or “Is the woman smiling?” are at chance
+  (50% on VQAv2), and multiple-choice knowledge questions are weak (43% on A-OKVQA). A choice question always
+  picks one of your options, even if none fits.
+</footer>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const EXAMPLES = [
+  { label: "Is there a cat?", type: "noul", text: "Is there a cat in the image?" },
+  { label: "Is there a person?", type: "noul", text: "Is there a person in the image?" },
+  { label: "Which object?", type: "choice", text: "Which of these objects is in the image?", options: "dog, car, pizza, laptop" },
+  { label: "Which room?", type: "choice", text: "Which room is this?", options: "kitchen, bedroom, bathroom, living room, office" },
+  { label: "Photo quality", type: "score", text: "How good is the technical quality of this image?", options: "bad, poor, fair, good, excellent" },
+];
+const TYPE_LABEL = { noul: "Yes / No", choice: "Choice", score: "Score" };
+const PLACEHOLDER = { noul: "e.g. Is there a person in the image?", choice: "e.g. Which room is this?", score: "e.g. How good is the technical quality of this image?" };
+let image = null;   // data URL
+let questions = [];
+let nextId = 1;
+
+function addQuestion(q = {}) {
+  questions.push({ id: "q" + nextId++, type: q.type || "noul", text: q.text || "", options: q.options || "", result: null });
+  render();
+}
+
+function render() {
+  const box = $("questions");
+  box.innerHTML = "";
+  questions.forEach((q, i) => {
+    const el = document.createElement("div");
+    el.className = "q";
+    const seg = Object.keys(TYPE_LABEL).map(t =>
+      `<button data-t="${t}" class="${q.type === t ? "on" : ""}">${TYPE_LABEL[t]}</button>`).join("");
+    const optHint = q.type === "choice" ? "Options, separated by commas" : "Levels from lowest to highest, separated by commas";
+    el.innerHTML = `
+      <div class="row between"><div class="seg">${seg}</div>
+        <button class="link" data-remove title="Remove question">✕</button></div>
+      <label class="qlabel">Question</label>
+      <input type="text" data-field="text" placeholder="${PLACEHOLDER[q.type]}">
+      ${q.type === "noul" ? "" : `<label class="qlabel">${q.type === "choice" ? "Options" : "Levels"}</label><input type="text" data-field="options" placeholder="${optHint}"><div class="hint">${optHint}.</div>`}
+      <div class="res"></div>`;
+    el.querySelector('[data-field="text"]').value = q.text;
+    const opt = el.querySelector('[data-field="options"]');
+    if (opt) opt.value = q.options;
+    el.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
+      q.type = b.dataset.t; q.result = null;
+      if (q.type === "score" && !q.options) q.options = "bad, poor, fair, good, excellent";
+      render();
+    });
+    el.querySelector("[data-remove]").onclick = () => { questions.splice(i, 1); render(); };
+    el.querySelectorAll("input[data-field]").forEach(inp => inp.oninput = () => { q[inp.dataset.field] = inp.value; });
+    if (q.result) el.querySelector(".res").appendChild(renderResult(q));
+    box.appendChild(el);
+  });
+  if (!questions.length) box.innerHTML = '<p class="hint">Add a question or pick an example above.</p>';
+}
+
+function splitOptions(s) { return s.split(",").map(x => x.trim()).filter(Boolean); }
+
+function renderResult(q) {
+  const r = q.result, wrap = document.createElement("div");
+  wrap.className = "result";
+  let entries, headline;
+  if (r.type === "noul") {
+    entries = [["yes", r.probabilities.yes], ["no", r.probabilities.no]];
+    headline = `${r.noul >= 0.5 ? "Yes" : "No"} <span>· P(yes) = ${(100 * r.noul).toFixed(1)}%</span>`;
+  } else if (r.type === "choice") {
+    entries = Object.entries(r.probabilities).sort((a, b) => b[1] - a[1]);
+    headline = `${esc(r.choice)} <span>· ${(100 * r.confidence).toFixed(1)}%</span>`;
+  } else {
+    entries = Object.entries(r.probabilities).map(([k, p]) => [r.legend[k], p]);
+    headline = `${(r.score + 1).toFixed(2)} of ${entries.length} <span>· expected level, most likely “${esc(entries.reduce((a, b) => b[1] > a[1] ? b : a)[0])}”</span>`;
+  }
+  const top = Math.max(...entries.map(e => e[1]));
+  wrap.innerHTML = `<div class="answer">${headline}</div>` + entries.map(([name, p]) => `
+    <div class="bar ${p === top ? "top" : ""}"><span class="name" title="${esc(name)}">${esc(name)}</span>
+      <span class="track"><span class="fill" style="width:${(100 * p).toFixed(1)}%"></span></span>
+      <span class="pct">${(100 * p).toFixed(1)}%</span></div>`).join("");
+  return wrap;
+}
+
+function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+
+function buildRequest() {
+  const qs = {};
+  for (const q of questions) {
+    if (!q.text.trim()) throw new Error("Every question needs text.");
+    const spec = { type: q.type, instructions: q.text.trim() };
+    if (q.type === "choice") {
+      const opts = splitOptions(q.options);
+      if (opts.length < 2) throw new Error(`“${q.text}”: give at least two options.`);
+      spec.criteria = Object.fromEntries(opts.map(o => [o, ""]));
+    } else if (q.type === "score") {
+      const lv = splitOptions(q.options);
+      if (lv.length < 2 || lv.length > 10) throw new Error(`“${q.text}”: give 2–10 levels.`);
+      spec.criteria = lv;
+    }
+    qs[q.id] = spec;
+  }
+  if (!Object.keys(qs).length) throw new Error("Add at least one question.");
+  const body = { questions: qs };
+  const state = $("state").value.trim();
+  const misplaced = state.endsWith("?") && questions.some(q => !q.text.trim().endsWith("?"));
+  $("notice").hidden = !misplaced;
+  $("notice").textContent = misplaced ? "Your context looks like a question. The model answers the text in the Question box; the context is only background." : "";
+  if (state) body.state = state;
+  if (image) body.image = image;
+  return body;
+}
+
+async function ask() {
+  $("error").textContent = "";
+  let body;
+  try { body = buildRequest(); } catch (e) { $("error").textContent = e.message; return; }
+  showCurl(body);
+  $("ask").disabled = true; $("ask").textContent = "Asking…";
+  const t0 = performance.now();
+  try {
+    const res = await fetch("/v1/systemone", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || res.statusText);
+    const rtt = performance.now() - t0;
+    questions.forEach(q => q.result = data.answers[q.id] || null);
+    render();
+    const t = data.timing_ms;
+    $("timing").innerHTML = `Model <b>${t.total.toFixed(1)} ms</b> (image ${t.image.toFixed(1)} ms${data.image_cached ? ", cached" : ""}, ` +
+      `${questions.length} question${questions.length > 1 ? "s" : ""} ${t.questions.toFixed(1)} ms) · round trip ${rtt.toFixed(0)} ms`;
+  } catch (e) {
+    $("error").textContent = "Request failed: " + e.message;
+  } finally {
+    $("ask").disabled = false; $("ask").textContent = "Ask";
+  }
+}
+
+function showCurl(body) {
+  const shown = { ...body };
+  if (shown.image) shown.image = shown.image.slice(0, 40) + "…(base64 image)";
+  $("curl").textContent = `curl ${location.origin}/v1/systemone \\\n  -H 'Content-Type: application/json' \\\n  -d '${JSON.stringify(shown, null, 2)}'`;
+}
+
+async function loadFile(file) {
+  if (!file || !file.type.startsWith("image/")) { $("error").textContent = "That file is not an image."; return; }
+  const bmp = await createImageBitmap(file);
+  const scale = Math.min(1, 1024 / Math.max(bmp.width, bmp.height));   // the model sees 256 px; keep uploads small
+  const c = document.createElement("canvas");
+  c.width = Math.round(bmp.width * scale); c.height = Math.round(bmp.height * scale);
+  c.getContext("2d").drawImage(bmp, 0, 0, c.width, c.height);
+  image = c.toDataURL("image/jpeg", 0.92);
+  $("drop").innerHTML = `<img src="${image}" alt="Selected image">`;
+  $("imgInfo").textContent = `${file.name || "pasted image"} · ${bmp.width}×${bmp.height}`;
+  $("clearImg").hidden = false;
+  questions.forEach(q => q.result = null); render(); $("timing").textContent = "";
+}
+
+function clearImage() {
+  image = null;
+  $("drop").innerHTML = '<div>Drop an image here, paste it, or click to choose<small>PNG, JPEG or WebP. The image stays on this machine.</small></div>';
+  $("imgInfo").textContent = ""; $("clearImg").hidden = true;
+}
+
+// wiring
+const drop = $("drop");
+drop.onclick = () => $("file").click();
+drop.onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); $("file").click(); } };
+$("file").onchange = (e) => loadFile(e.target.files[0]);
+drop.ondragover = (e) => { e.preventDefault(); drop.classList.add("over"); };
+drop.ondragleave = () => drop.classList.remove("over");
+drop.ondrop = (e) => { e.preventDefault(); drop.classList.remove("over"); loadFile(e.dataTransfer.files[0]); };
+document.addEventListener("paste", (e) => {
+  const item = [...(e.clipboardData?.items || [])].find(i => i.type.startsWith("image/"));
+  if (item) loadFile(item.getAsFile());
+});
+$("clearImg").onclick = clearImage;
+$("addQ").onclick = () => addQuestion();
+$("ask").onclick = ask;
+document.addEventListener("keydown", (e) => { if ((e.metaKey || e.ctrlKey) && e.key === "Enter") ask(); });
+$("examples").innerHTML = EXAMPLES.map((x, i) => `<button class="chip" data-i="${i}">${esc(x.label)}</button>`).join("");
+$("examples").querySelectorAll("button").forEach(b => b.onclick = () => addQuestion(EXAMPLES[b.dataset.i]));
+
+fetch("/health").then(r => r.json()).then(h => {
+  $("status").textContent = `${h.model} · ${h.device}` + (h.calibrated.length ? " · calibrated" : " · uncalibrated");
+  if (h.notes) $("footer").textContent = h.notes;
+}).catch(() => { $("status").textContent = "server not reachable"; $("status").classList.add("bad"); });
+
+addQuestion(EXAMPLES[0]);
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+ "cand": "C5",
+ "variant": "img+facts",
+ "steps": 588,
+ "batch": 16,
+ "boards_generated": 2339,
+ "boards_seen": 9408,
+ "readout": "mean-pooled",
+ "val_move_accuracy": 0.978,
+ "wall_s": 2819.3067269325256,
+ "log": [
+  {
+   "step": 0,
+   "loss": 1.1451879739761353
+  },
+  {
+   "step": 200,
+   "loss": 0.5815329551696777
+  },
+  {
+   "step": 400,
+   "loss": 0.011412077583372593
+  },
+  {
+   "step": 587,
+   "loss": 0.0023161526769399643
+  }
+ ]
+}

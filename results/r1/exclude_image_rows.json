@@ -1,0 +1,6 @@
+{
+ "source": "data-integrity audit 2026-09-22 (pHash-256 / 16x16 dHash + pixel correlation, eyeball-verified)",
+ "mmstar_exact_duplicates": [2634, 3720, 3874, 11618, 18341, 21474, 22620, 24061, 25737, 26364, 26726, 27218, 27321, 27437, 27725, 28765, 31205, 32034, 32601, 32968, 36799, 36914, 38985, 39189, 40591],
+ "sugarcrepe_swap_att_exact_duplicate": [39438],
+ "val2017_burst_shot_near_duplicate": [31552]
+}
