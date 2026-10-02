@@ -26,7 +26,7 @@ from glance.data.benchmarks import EXTERNAL
 from glance.metrics import auroc
 from glance.serve import Predictor
 
-ENCODERS = {"C5: SigLIP2 B/32 @256 (released)": ("data/release/glance-c5-open-v4", "C5", None),
+ENCODERS = {"C5: SigLIP2 B/32 @256 (released)": ("weights/glance-c5-open-v4", "C5", None),
             "C1: SigLIP2 B/16 @512 (ModernVBERT)": ("data/ckpt/C1_art2_ep2.pt", "C1", None)}
 
 

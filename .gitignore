@@ -24,3 +24,6 @@ results/raw/
 
 # Local agent tooling
 .claude/worktrees/
+
+# Released weights live in weights/ (Git LFS), the only place weight files are tracked
+!/weights/**

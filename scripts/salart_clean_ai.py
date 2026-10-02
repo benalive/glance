@@ -24,7 +24,7 @@ from glance.metrics import auroc
 from glance.serve import Predictor
 
 MODELS = {  # name -> Predictor args (ckpt, cand, calib_dir)
-    "Glance C5 released (v4 seed 0, package)": ("data/release/glance-c5-open-v4", "C5", None),
+    "Glance C5 released (v4 seed 0, package)": ("weights/glance-c5-open-v4", "C5", None),
     "Glance C5 v4 seed 1 (no calibration)": ("data/ckpt/C5_open4_s1.pt", "C5", None),
     "Glance C5 v4 seed 2 (no calibration)": ("data/ckpt/C5_open4_s2.pt", "C5", None),
     "Glance C5 research (distilled)": ("data/ckpt/C5_distill_ep2.pt", "C5", "data/ckpt/C5_distill_ep2_calib"),

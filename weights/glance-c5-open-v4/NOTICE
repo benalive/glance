@@ -1,0 +1,19 @@
+Glance C5 (open), glance-c5-open-v4
+Copyright 2026 Yuan Shen. Licensed under the Apache License, Version 2.0 (LICENSE).
+
+The weights include and were trained from:
+- SigLIP2-B/32 @256 (google/siglip2-base-patch32-256), Apache License 2.0, Google.
+- Ettin encoder 32M (jhu-clsp/ettin-encoder-32m), MIT License, as declared on its model card
+  (Weller et al., Johns Hopkins University); see the source repository for its notice.
+
+Training data (attribution for every image in attribution.jsonl):
+- COCO (cocodataset.org): annotations CC BY 4.0; photos used only under CC BY 2.0, no known copyright
+  restrictions, or US Government work, each credited to its Flickr source.
+- Open Images V7 (Google): annotations CC BY 4.0; photos listed as CC BY 2.0, each credited to its author.
+- VQAv2 (visualqa.org), CC BY 4.0. GQA (Stanford), CC BY 4.0. Visual Genome image mapping, CC BY 4.0.
+- A-OKVQA (Allen Institute for AI), Apache License 2.0.
+- EvalMuse-40K (DY-Evalab), BSD-3-Clause; images from open generators under CreativeML OpenRAIL-M,
+  CreativeML Open RAIL++-M, Apache-2.0 and the Playground v2.5 Community License. The Playground licence
+  forbids using its outputs to improve another text-to-image model: do not use this model to train or
+  filter data for an image generator.
+- ImageRewardDB (THUDM / zai-org), Apache License 2.0; images from DiffusionDB, CC0.

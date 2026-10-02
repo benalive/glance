@@ -18,7 +18,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-PACKAGE = "data/release/glance-c5-open-v4"
+PACKAGE = "weights/glance-c5-open-v4"
 PHOTOS = sorted(Path("data/clean/coco").glob("*.jpg"))[:20]
 
 CHILD = """

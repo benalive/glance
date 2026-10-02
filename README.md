@@ -7,7 +7,7 @@
 Ask yes/no, multiple-choice or rating questions about an image and get a probability for every answer:
 18 ms for a new image, 3 ms for each further question about it. No GPU.
 
-[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE) [![Paper](https://img.shields.io/badge/paper-PDF-b31b1b)](paper/glance.pdf) [![Weights](https://img.shields.io/badge/weights-v4-2a78d6)](https://github.com/benalive/glance/releases/tag/weights-v4) [![Python 3.12](https://img.shields.io/badge/python-3.12-3776ab)](pyproject.toml) [![Runs on CPU](https://img.shields.io/badge/runs%20on-CPU-555)](#benchmarks)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE) [![Paper](https://img.shields.io/badge/paper-PDF-b31b1b)](paper/glance.pdf) [![Weights](https://img.shields.io/badge/weights-included-2a78d6)](weights/) [![Python 3.12](https://img.shields.io/badge/python-3.12-3776ab)](pyproject.toml) [![Runs on CPU](https://img.shields.io/badge/runs%20on-CPU-555)](#benchmarks)
 
 [Quickstart](#quickstart) · [Examples](#examples) · [Benchmarks](#benchmarks) · [Weights](#weights) · [Model card](docs/model_card.md) · [Paper](paper/glance.pdf)
 
@@ -57,15 +57,18 @@ Real outputs of the released model.
 Requires [uv](https://docs.astral.sh/uv/) and Python 3.12, on macOS or Linux.
 
 ```bash
+git lfs install                                        # once: the weights are stored with Git LFS
 git clone https://github.com/benalive/glance && cd glance
-uv sync                                   # PyTorch, Transformers, ONNX Runtime
-python scripts/download_weights.py        # 1.08 GB, checksum verified
+uv sync                                                # PyTorch, Transformers, ONNX Runtime
 ```
+
+The clone includes the weights (1.6 GB). For the code and the released model only, clone with
+`GIT_LFS_SKIP_SMUDGE=1` and then run `git lfs pull --include "weights/glance-c5-open-v4/*"` (1.05 GB).
 
 ```python
 from glance.serve import Predictor
 
-model = Predictor("data/release/glance-c5-open-v4")
+model = Predictor("weights/glance-c5-open-v4", device="cpu")     # ONNX Runtime on the CPU
 out = model.predict({
     "cat":    {"type": "noul",   "instructions": "Is there a cat in the image?"},
     "animal": {"type": "choice", "instructions": "Which animal is in the picture?",
@@ -88,7 +91,7 @@ out["answers"]["sharp"]["score"]           # expected level, 0 = "blurry" ... 4 
 **As an HTTP server**, with a browser playground at the same address:
 
 ```bash
-uv run python -m glance.serve --ckpt data/release/glance-c5-open-v4      # http://127.0.0.1:8089
+uv run python -m glance.serve --ckpt weights/glance-c5-open-v4      # http://127.0.0.1:8089
 
 curl -s localhost:8089/v1/systemone -H 'Content-Type: application/json' -d '{
   "image": "'"$(base64 < photo.jpg | tr -d '\n')"'",
@@ -136,16 +139,16 @@ the full picture.
 
 ## Weights
 
-Published as assets of the [`weights-v4` release](https://github.com/benalive/glance/releases/tag/weights-v4),
-with SHA-256 sums in `SHA256SUMS`. `python scripts/download_weights.py --all` fetches everything.
+In [`weights/`](weights/), stored with Git LFS; check them with `shasum -a 256 -c SHA256SUMS` inside
+that directory.
 
-| file | what | size |
+| path | what | size |
 |---|---|---|
-| `glance-c5-open-v4.tar` | **the release package**: weights as safetensors and as ONNX, tokenizer, configs, calibration, model card, licence, attribution for every training image | 1.08 GB |
-| `C5_open4_s0.safetensors` | trained tensors of the released model, for use with the base models from the Hugging Face Hub | 79 MB |
-| `C5_open4_s1`, `C5_open4_s2` | the other two seeds of the released recipe (paper §8) | 79 MB each |
-| `C5_general_v2_s0`–`s2` | stage-1 checkpoints of the recipe | 79 MB each |
-| `C5_open5_s0` | a retrain with procedural local anomalies (paper §7) | 79 MB |
+| `weights/glance-c5-open-v4/` | **the release model**: weights as safetensors and as ONNX, tokenizer, configs, calibration, model card, licence, attribution for every training image | 1.05 GB |
+| `weights/checkpoints/C5_open4_s0.safetensors` | trained tensors of the released model, for use with the base models from the Hugging Face Hub | 79 MB |
+| `weights/checkpoints/C5_open4_s1`, `_s2` | the other two seeds of the released recipe (paper §8) | 79 MB each |
+| `weights/checkpoints/C5_general_v2_s0`–`s2` | stage-1 checkpoints of the recipe | 79 MB each |
+| `weights/checkpoints/C5_open5_s0` | a retrain with procedural local anomalies (paper §7) | 79 MB |
 
 The research models in the paper were trained on data that cannot be redistributed in weights (HAD,
 RichHF-18K, KonIQ-10k, NonCommercial COCO photos) and are not released.

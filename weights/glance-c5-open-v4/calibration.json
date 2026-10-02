@@ -1,0 +1,36 @@
+{
+ "calibration": {
+  "noul": {
+   "a": 0.7768274044524055,
+   "b": -0.025302505430066867,
+   "n": 12165
+  },
+  "choice": {
+   "temperature": 1.4046750664612393,
+   "n": 4102
+  },
+  "score": {
+   "temperature": 1.1558429439617994,
+   "n": 883
+  }
+ },
+ "fit": {
+  "noul": {
+   "n": 12165,
+   "nll_raw": 0.2394697566785771,
+   "nll_calibrated": 0.23392692708817964
+  },
+  "choice": {
+   "n": 4102,
+   "nll_raw": 0.6066591786436617,
+   "nll_calibrated": 0.5838665295378993
+  },
+  "score": {
+   "n": 883,
+   "nll_raw": 1.1446683021587787,
+   "nll_calibrated": 1.1400651881847756
+  }
+ },
+ "fitted_on": "data/clean_art_v4/calib.jsonl (held out from training)",
+ "logits": "served path, CPU fp32"
+}

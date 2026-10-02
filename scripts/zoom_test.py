@@ -22,7 +22,7 @@ from glance.data.benchmarks import EXTERNAL, SALART_Q, artibench, real_photos_no
 from glance.metrics import auroc
 from glance.serve import Predictor
 
-PACKAGE = "data/release/glance-c5-open-v4"
+PACKAGE = "weights/glance-c5-open-v4"
 GRIDS = (2, 3)
 
 

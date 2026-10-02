@@ -23,7 +23,7 @@ from glance.serve import Predictor, calibrated_probs
 
 MODELS = {  # name -> (per-item file pattern, calibration: package json / calib dir / None = raw)
     "Glance C5 open release (ours, Apache-2.0)": ("results/r4/C5_open4_s0/eval/C5__{b}.jsonl",
-                                                  "data/release/glance-c5-open-v4/calibration.json"),
+                                                  "weights/glance-c5-open-v4/calibration.json"),
     "Glance C5 research-only (distilled)": ("results/r2/C5_distill_ep2/eval/C5__{b}.jsonl", "data/ckpt/C5_distill_ep2_calib"),
     "Glance C1 research-only (teacher)": ("results/r2/C1_art2_ep2/eval/C1__{b}.jsonl", "data/ckpt/C1_art2_ep2_calib"),
     "Qwen3-VL-2B (zero-shot, run here)": ("results/r0/frontier/qwen3vl_2b__{b}.jsonl", None),

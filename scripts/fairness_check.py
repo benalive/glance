@@ -7,7 +7,7 @@ photograph, so any "has errors" answer is a false alarm. The model answers three
 package's calibration; the false-alarm rate (P(error) >= 0.5) is reported per group with a Wilson 95%
 interval, plus the mean P(error).
 
-    uv run python scripts/fairness_check.py --package data/release/glance-c5-open   # -> results/fairness/
+    uv run python scripts/fairness_check.py --package weights/glance-c5-open-v4   # -> results/fairness/
 """
 import argparse
 import json

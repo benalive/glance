@@ -22,7 +22,7 @@ from glance.serve import Predictor, calibrated_probs
 
 OURS = {  # name -> (per-item file pattern, calibration dir or None for raw argmax)
     "Glance C5 open-licence release (ours; v4 seed 0, package calibration)": (
-        "results/r4/C5_open4_s0/eval/C5__{b}.jsonl", "data/release/glance-c5-open-v4/calibration.json"),
+        "results/r4/C5_open4_s0/eval/C5__{b}.jsonl", "weights/glance-c5-open-v4/calibration.json"),
     "Glance C5 distilled from C1 (ours)": ("results/r2/C5_distill_ep2/eval/C5__{b}.jsonl", "data/ckpt/C5_distill_ep2_calib"),
     "Glance C5, same data without the teacher (ours; control)": ("results/r2/C5_gold48k_ep2/eval/C5__{b}.jsonl", "data/ckpt/C5_gold48k_ep2_calib"),
     "Glance C5 + AI-image errors (ours)": ("results/r2/C5_art2_ep2/eval/C5__{b}.jsonl", "data/ckpt/C5_art2_ep2_calib"),

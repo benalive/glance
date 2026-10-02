@@ -1,0 +1,29 @@
+{
+ "cand": "C5",
+ "run": "results/r4/C5_open4_s0",
+ "mix": "data/clean_art_v4",
+ "code_commit": "0d4a62e7c167e522a16f4b3f8d445d5e1b7a31da",
+ "image_size": 256,
+ "base_models": {
+  "vision": {
+   "repo": "google/siglip2-base-patch32-256",
+   "revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84"
+  },
+  "text": {
+   "repo": "jhu-clsp/ettin-encoder-32m",
+   "revision": "1b8ba06455dd44f80fc9c1ca9e22806157a57379"
+  }
+ },
+ "parameters": 134028416,
+ "license": "Apache-2.0",
+ "onnx": {
+  "files": [
+   "image.onnx",
+   "image.onnx.data",
+   "questions.onnx",
+   "questions.onnx.data"
+  ],
+  "max_logit_diff_vs_torch": 0.0004961490631103516,
+  "checked_questions": 300
+ }
+}

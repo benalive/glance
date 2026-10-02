@@ -1,0 +1,5 @@
+# Released weights are stored with Git LFS
+weights/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+weights/**/*.onnx filter=lfs diff=lfs merge=lfs -text
+weights/**/*.data filter=lfs diff=lfs merge=lfs -text
+weights/**/attribution.jsonl filter=lfs diff=lfs merge=lfs -text

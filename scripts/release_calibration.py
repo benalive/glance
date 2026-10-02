@@ -15,7 +15,7 @@ import numpy as np
 from glance.metrics import auroc, brier, majority, smooth_ece
 from glance.serve import calibrated_probs
 
-PACKAGE = Path("data/release/glance-c5-open-v4")
+PACKAGE = Path("weights/glance-c5-open-v4")
 RUN = "results/r4/C5_open4_s{seed}/eval/C5__{b}.jsonl"
 BENCHES = ["vqav2_val_yesno", "pope_adversarial", "pope_random", "aokvqa_val", "mmstar", "sugarcrepe_replace_rel",
            "sugarcrepe_swap_att", "salart_q1", "artibench", "had_val_hands", "had_val_any", "richhf_test_artifacts"]

@@ -23,7 +23,7 @@ from glance.data.benchmarks import EXTERNAL
 from glance.metrics import auroc
 from glance.serve import Predictor
 
-MODELS = {"released C5 (v4 seed 0)": ("data/release/glance-c5-open-v4", "C5", None),
+MODELS = {"released C5 (v4 seed 0)": ("weights/glance-c5-open-v4", "C5", None),
           "research C5 (distilled)": ("data/ckpt/C5_distill_ep2.pt", "C5", "data/ckpt/C5_distill_ep2_calib")}
 QUESTION = "Does this image contain visible generation errors?"
 RECALL = 0.45

@@ -13,7 +13,7 @@ import subprocess
 import tarfile
 from pathlib import Path
 
-TOP = {".gitignore", "README.md", "LICENSE", "NOTICE", "CITATION.cff", "pyproject.toml", "uv.lock", "docs/model_card.md"}
+TOP = {".gitignore", ".gitattributes", "README.md", "LICENSE", "NOTICE", "CITATION.cff", "pyproject.toml", "uv.lock", "docs/model_card.md"}
 DIRS = ("glance/", "scripts/", "tests/", "bench/", "paper/", "docs/assets/")
 RESULTS = {"results/paper_intervals.jsonl"}  # a summary despite its extension
 
